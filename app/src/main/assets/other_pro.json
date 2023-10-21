@@ -1,0 +1,1236 @@
+{
+  "Basic": [
+    {
+      "indNum": "1",
+      "queName": "Hello World!",
+      "code": "#include <stdio.h>\nint main()\n{\n    printf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "1",
+      "queName": "if statement",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &num);\n\n    if (num % 2 == 0)\n    {\n        printf(\"%d is even.\\n\", num);\n    }\n\n    return 0;\n}\n",
+      "output": "Run 1:\nEnter an integer: 8\n8 is even.\n\nRun 2\nEnter an integer: 5\n5 is odd."
+    },
+    {
+      "indNum": "2",
+      "queName": "if else (demo 1)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Press 0: \");\n    scanf(\"%d\", &num);\n\n    if (num == 0)\n    {\n        printf(\"Zero is PRESSED.\");\n    }\n    else\n    {\n        printf(\"Zero is NOT PRESSED.\");\n    }\n\n    return 0;\n}\n",
+      "output": "Run 1:\nPress 0: 1\nZero is NOT PRESSED.\n\nRun 2:\nPress 0: 0\nZero is PRESSED."
+    },
+    {
+      "indNum": "3",
+      "queName": "nested if else (demo 1)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &num);\n\n    if (num > 0)\n    {\n        printf(\"%d is positive.\\n\", num);\n    }\n    else\n    {\n        if (num < 0)\n        {\n            printf(\"%d is negative\", num);\n        }\n        else\n        {\n            printf(\"%d is zero\", num);\n        }\n    }\n\n    return 0;\n}\n",
+      "output": "Run 1:\nEnter a number: 8\n8 is positive.\n\nRun 2\nEnter a number: 0\n0 is zero."
+    },
+    {
+      "indNum": "4",
+      "queName": "if-else with OR operator",
+      "code": "#include <stdio.h>\nint main()\n{\n    char gen;\n    printf(\"Are you male (Y/N): \");\n    scanf(\"%c\", &gen);\n\n    if (gen == \"Y\" || gen == \"y\")\n    {\n        printf(\"Gender: Male\");\n    }\n    else\n    {\n        printf(\"Gender: Female\");\n    }\n    return 0;\n}",
+      "output": "Run 1:\nAre you male (Y/N): Y\nGender: Male\n\nRun 2:\nAre you male (Y/N): N\nGender: Female\n\nRun 3:\nAre you male (Y/N): y\nGender: Male\n\nRun 4:\nAre you male (Y/N): n\nGender: Female"
+    },
+    {
+      "indNum": "5",
+      "queName": "if-else with AND operator",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int vote;\n\n    printf(\"Enter your Age: \");\n    scanf(\"%d\", &age);\n    if (age >= 18 && age <= 100)\n    {\n        printf(\"You are Eligible for Voting.\");\n    }\n    else\n    {\n        printf(\"You are NOT Eligible for Voting.\");\n    }\n    return 0;\n}",
+      "output": "Run 1:\nEnter your Age: 19\nYou are Eligible for Voting.\n\nRun 2:\nEnter your Age: 17\nYou are NOT Eligible for Voting.\n\nRun 3:\nEnter your Age: 101\nYou are NOT Eligible for Voting."
+    },
+    {
+      "indNum": "6",
+      "queName": "if-else-if ladder (demo 1)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int score;\n\n    printf(\"Enter your score: \");\n    scanf(\"%d\", &score);\n\n    if (score >= 90)\n    {\n        printf(\"Grade: A\\n\");\n    }\n\n    else if (score >= 80)\n    {\n        printf(\"Grade: B\\n\");\n    }\n\n    else if (score >= 70)\n    {\n        printf(\"Grade: C\\n\");\n    }\n\n    else if (score >= 60)\n    {\n        printf(\"Grade: D\\n\");\n    }\n\n    else\n    {\n        printf(\"Grade: F\\n\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter your score: 95\nGrade: A\n\nRun 2:\nEnter your score: 67\nGrade: D"
+    },
+    {
+      "indNum": "7",
+      "queName": "if-else-if ladder (demo 2)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n    printf(\"enter a number: \");\n    scanf(\"%d\", &num);\n\n    if (num == 10)\n    {\n        printf(\"number is equal to 10.\");\n    }\n\n    else if (num == 50)\n    {\n        printf(\"numbers is equal to 50.\");\n    }\n\n    else if (num == 100)\n    {\n        printf(\"number is equal to 100.\");\n    }\n    else\n    {\n        printf(\"number is not equal to 10, 50, 100.\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nenter a number: 10\nnumber is equal to 10.\n\nRun 2:\nenter a number: 11\nnumber is not equal to 10, 50, 100.\n\nRun 3:\nenter a number: 100\nnumber is equal to 100.\n\nRun 4:\nenter a number: 50\nnumber is equal to 50.\n\n"
+    },
+    {
+      "indNum": "1",
+      "queName": "for loop example",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n = 10;\n    \n    for(i = 1; i<=n; i++) {\n    \tprintf(\"%d \",i);\n\t}\n\n    return 0;\n}",
+      "output": "1 2 3 4 5 6 7 8 9 10"
+    },
+    {
+      "indNum": "2",
+      "queName": "nested for loop example",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, j;\n\n    for (i = 1; i <= 5; i++)\n    {\n        for (j = 1; j <= 5; j++)\n        {\n            printf(\"*\");\n        }\n        printf(\"\\n\");\n    }\n    return 0;\n}",
+      "output": "* * * * *\n* * * * *\n* * * * *\n* * * * *\n* * * * *"
+    },
+    {
+      "indNum": "1",
+      "queName": "while loop (demo 1)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i = 1;\n\n    while (i <= 10)\n    {\n        printf(\"%d \", i);\n        i++;\n    }\n\n    return 0;\n}",
+      "output": "1 2 3 4 5 6 7 8 9 10"
+    },
+    {
+      "indNum": "2",
+      "queName": "do-while loop (demo 1)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i = 1;\n\n    do\n    {\n        printf(\"%d \", i);\n        i++;\n    } while (i <= 10)\n\n        return 0;\n}",
+      "output": "1 2 3 4 5 6 7 8 9 10"
+    },
+    {
+      "indNum": "1",
+      "queName": "switch case (demo 1)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n    printf(\"enter a number: \");\n    scanf(\"%d\", &num);\n    switch (num)\n    {\n    case 10:\n        printf(\"number is equal to 10.\");\n        break;\n\n    case 50:\n        printf(\"number is equal to 50.\");\n        break;\n\n    case 100:\n        printf(\"number is equal to 100.\");\n        break;\n\n    default:\n        printf(\"number is not equal to 10, 50, 100.\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nenter a number: 10\nnumber is equal to 10.\n\nRun 2:\nenter a number: 24\nnumber is not equal to 10, 50, 100.!"
+    },
+    {
+      "indNum": "2",
+      "queName": "switch case (demo 2)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int choice;\n    printf(\"Menu:\\n\");\n    printf(\"1. Option 1\\n\");\n    printf(\"2. Option 2\\n\");\n    printf(\"3. Option 3\\n\");\n    printf(\"Enter your choice: \");\n    scanf(\"%d\", choice);\n\n    switch (choice)\n    {\n    case 1:\n        printf(\"You selected Option 1.\");\n        break;\n\n    case 2:\n        printf(\"You selected Option 2.\");\n        break;\n\n    case 3:\n        printf(\"You selected Option 3.\");\n        break;\n\n    default:\n        printf(\"Invalid choice.\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nMenu:\n1. Option 1\n2. Option 2\n3. Option 3\nEnter your choice: 1\nYou selected Option 1.\n\nRun 2:\nMenu:\n1. Option 1\n2. Option 2\n3. Option 3\nEnter your choice: 4\nInvalid choice."
+    },
+    {
+      "indNum": "3",
+      "queName": "switch case (case merge demo)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int id;\n    printf(\"Enter your id to confirm your department: \");\n    scanf(\"%d\", &id);\n\n    switch (id)\n    {\n    case 101:\n    case 102:\n    case 103:\n        printf(\"BCA Student\");\n        break;\n\n    case 106:\n    case 107:\n    case 108:\n        printf(\"B.Tech Student\");\n\n    default:\n        printf(\"INVALID ID\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter your id to confirm your department: 101 or 102 or 103\nBCA Student\n\nRun 2:\nEnter your id to confirm your department: 106 or 107 or 108\nB.Tech Student\n\nRun 3:\nEnter your id to confirm your department: 10\nINVALID ID"
+    },
+    {
+      "indNum": "12",
+      "queName": "goto (demo 1)",
+      "code": "#include <stdio.h>\nint main()\n{\n    int num;\n    printf(\"enter a number: \");\n    scanf(\"%d\", &num);\n\n    if (num % 2 == 0)\n        goto even;\n\n    else\n        goto odd;\n\neven:\n    printf(\"%d is even\", num);\n    return 0;\n\nodd:\n    printf(\"%d is odd\", num);\n\n    return 0;\n}",
+      "output": "Run 1:\nenter a number: 6\n6 is even\n\nRun 2:\nenter a number: 5\n5 is odd"
+    },
+    {
+      "indNum": "13",
+      "queName": "goto (demo 2)",
+      "code": "#include <stdio.h>\nint main()\n{\n    int n = 1;\nlabel:\n    printf(\"%d \", n);\n    n++;\n\n    if (n <= 10)\n        goto label;\n\n    return 0;\n}",
+      "output": "1 2 3 4 5 6 7 8 9 10"
+    },
+    {
+      "indNum": "18",
+      "queName": "break",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i;\n\n    for (i = 1; i <= 10; i++)\n    {\n        if (i == 5)\n        {\n            break;\n        }\n        printf(\"%d \", i);\n    }\n\n    return 0;\n}",
+      "output": "1 2 3 4"
+    },
+    {
+      "indNum": "19",
+      "queName": "continue",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i;\n\n    for (i = 1; i <= 10; i++)\n    {\n        if (i == 5)\n        {\n            continue;\n        }\n        printf(\"%d \", i);\n    }\n\n    return 0;\n}",
+      "output": "1 2 3 4 6 7 8 9 10"
+    }
+  ],
+  "General": [
+    {
+      "indNum": "1",
+      "queName": "Swap two number",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b, c;\n\n    printf(\"Enter the value of a & b: \");\n    scanf(\"%d%d\", &a, &b);\n\n    c = a;\n    a = b;\n    b = c;\n\n    printf(\"\\nAfter Swapping:\\nX: %d \\nY: %d\", a, b);\n\n    return 0;\n}",
+      "output": "Enter the value of a & b: 5\n10\n\nAfter Swapping:\nX: 10\nY: 5!"
+    },
+    {
+      "indNum": "2",
+      "queName": "Swap two number without using third variable",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b, c;\n\n    printf(\"Enter the value of a & b: \");\n    scanf(\"%d%d\", &a, &b);\n\n    a = a + b;\n    b = a - b;\n    a = a - b;\n\n    printf(\"\\nAfter Swapping:\\nX: %d \\nY: %d\", a, b);\n\n    return 0;\n}",
+      "output": "Enter the value of a & b: 5\n6\n\nAfter Swapping:\nX: 6\nY: 5"
+    },
+    {
+      "indNum": "3",
+      "queName": "Add two Numbers",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num1, num2, sum;\n\n    printf(\"Enter first number: \");\n    scanf(\"%d\", &num1);\n    printf(\"Enter second number:\");\n    scanf(\"%d\", &num2);\n\n    /* Adding both number is simple and fundamental */\n    sum = num1 + num2;\n\n    /* Prints the sum of two numbers */\n    printf(\"Sum of %d and %d = %d\", num1, num2, sum);\n\n    return 0;\n}",
+      "output": "Enter first number: 5\nEnter second number:4\nSum of 5 and 4 = 9"
+    },
+    {
+      "indNum": "4",
+      "queName": "Speed calculation",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int d, t, s;\n\n    printf(\"Enter Distance (in Kms): \");\n    scanf(\"%d\", &d);\n    printf(\"Enter Time (in hrs): \");\n    scanf(\"%d\", &t);\n\n    s = d / t;\n    printf(\"Speed is: %d (Km/hr)\", s);\n\n    return 0;\n}",
+      "output": "Enter Distance (in Kms): 100\nEnter Time (in hrs): 3\nSpeed is: 33 (Km/hr)"
+    },
+    {
+      "indNum": "5",
+      "queName": "Interest Calculate",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int p, t;\n    float r, i;\n\n    printf(\"Enter Principle Amount (P): \");\n    scanf(\"%d\", &p);\n    printf(\"Enter Rate (R): \");\n    scanf(\"%f\", &r);\n    printf(\"Enter Time (T): \");\n    scanf(\"%d\", &t);\n\n    i = (p * r * t) / 100;\n\n    printf(\"Interest is: %.2f\", i);\n\n    return 0;\n}",
+      "output": "Enter Principle Amount (P): 1500\nEnter Rate (R): 2.5\nEnter Time (T): 3\nInterest is: 112.50"
+    },
+    {
+      "indNum": "6",
+      "queName": "Ohm's Law (I = V/R)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    float r, i, v;\n\n    printf(\"Enter Voltage (V): \");\n    scanf(\"%f\", &v);\n    printf(\"Enter Resistance (R): \");\n    scanf(\"%f\", &r);\n\n    i = v / r;\n\n    printf(\"Current (I): %f amp\", i);\n\n    return 0;\n}",
+      "output": "Enter Voltage (V): 125\nEnter Resistance (R): 35\nCurrent (I): 3.571429 amp"
+    },
+    {
+      "indNum": "7",
+      "queName": "Strong Number",
+      "code": "#include <stdio.h>\n \nint factorial(int n)\n{\n    int i, fact = 1;\n    for (i = 1; i <= n; i++)\n    {\n        fact = fact * i;\n    }\n    return fact;\n}\n \nint main(void)\n{\n    int number, sum = 0;\n    printf(\"Enter the number: \");\n    scanf(\"%d\", &number);\n    int i = n;\n    while (i != 0)\n    {\n        sum = sum + factorial(i % 10);\n        i = i / 10;\n    }\n    if (sum == n)\n    {\n        printf(\"%d is strong number\", number);\n    }\n    else\n    {\n        printf(\"%d is not a strong number\", number);\n    }\n}",
+      "output": "Enter the number: 145\n145 is a strong number"
+    },
+    {
+      "indNum": "8",
+      "queName": "Find maximum between two numbers",
+      "code": "/*using simple if*/\n\n#include <stdio.h>\n\nint main()\n{\n    int num1, num2;\n\n    printf(\"Enter two numbers: \");\n    scanf(\"%d%d\", &num1, &num2);\n\n    if (num1 > num2)\n    {\n        printf(\"%d is maximum\", num1);\n    }\n\n    if (num2 > num1)\n    {\n        printf(\"%d is maximum\", num2);\n    }\n\n    if (num1 == num2)\n    {\n        printf(\"Both are equal\");\n    }\n\n    return 0;\n} \n\n\n/* using if else */\n\n #include <stdio.h>\n\nint main()\n{\n    int num1, num2;\n\n    printf(\"Enter two numbers: \");\n    scanf(\"%d%d\", &num1, &num2);\n\n    if(num1 > num2)\n    {\n        printf(\"%d is maximum\", num1);        \n    }\n    else\n    {\n        printf(\"%d is maximum\", num2);\n    }\n\n    return 0;\n}",
+      "output": "Enter two numbers: 5\n10\n10 is maximum"
+    },
+    {
+      "indNum": "9",
+      "queName": "Find maximum between three numbers",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num1, num2, num3, max;\n\n    printf(\"Enter three numbers: \");\n    scanf(\"%d%d%d\", &num1, &num2, &num3);\n\n    if ((num1 > num2) && (num1 > num3))\n    {\n        max = num1;\n    }\n    else if (num2 > num3)\n    {\n        max = num2;\n    }\n    else\n    {\n        max = num3;\n    }\n\n    printf(\"Maximum among all three numbers = %d\", max);\n\n    return 0;\n}",
+      "output": "Enter three numbers: 5\n4\n2\nMaximum among all three numbers = 5"
+    },
+    {
+      "indNum": "10",
+      "queName": "Check positive, negative or zero",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Enter any number: \");\n    scanf(\"%d\", &num);\n\n    if (num > 0)\n    {\n        printf(\"Number is POSITIVE\");\n    }\n    else if (num < 0)\n    {\n        printf(\"Number is NEGATIVE\");\n    }\n    else\n    {\n        printf(\"Number is ZERO\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter any number: 6\nNumber is POSITIVE\n\nRun 2:\nEnter any number: -3\nNumber is NEGATIVE\n\nRun 3:\nEnter any number: 0\nNumber is ZERO"
+    },
+    {
+      "indNum": "11",
+      "queName": "Check whether a number is divisible by 5 & 11 or not",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Enter any number: \");\n    scanf(\"%d\", &num);\n\n    /*\n     * If  num modulo division 5 is 0\n     * and num modulo division 11 is 0 then\n     * the number is divisible by 5 and 11 both\n     */\n    if ((num % 5 == 0) && (num % 11 == 0))\n    {\n        printf(\"Number is divisible by 5 and 11\");\n    }\n    else\n    {\n        printf(\"Number is not divisible by 5 and 11\");\n    }\n\n    return 0;\n}",
+      "output": "Enter any number: 55\nNumber is divisible by 5 and 11"
+    },
+    {
+      "indNum": "12",
+      "queName": "Check whether a number is even or odd",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Enter any number to check even or odd: \");\n    scanf(\"%d\", &num);\n\n    /* Check if the number is divisible by 2 then it is even */\n    if (num % 2 == 0)\n    {\n        /* num % 2 is 0 */\n        printf(\"Number is Even.\");\n    }\n    else\n    {\n        printf(\"Number is Odd.\");\n    }\n\n    return 0;\n}",
+      "output": "Enter any number to check even or odd: 8\nNumber is Even."
+    },
+    {
+      "indNum": "13",
+      "queName": "Check whether a year is leap year or not",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int year;\n\n    printf(\"Enter year : \");\n    scanf(\"%d\", &year);\n\n    /*\n     * If year is exactly divisible by 4  and year is not divisible by 100\n     * or year is exactly divisible by 400 then\n     * the year is leap year.\n     * Else year is normal year\n     */\n    if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))\n    {\n        printf(\"LEAP YEAR\");\n    }\n    else\n    {\n        printf(\"COMMON YEAR\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter year : 2002\nCOMMON YEAR\n\nRun 2:\nEnter year : 2004\nLEAP YEAR"
+    },
+    {
+      "indNum": "14",
+      "queName": "Check whether vowel or consonant",
+      "code": "/* without ASCII value */#include <stdio.h>\n\nint main()\n{\n    char ch;\n\n    printf(\"Enter any character: \");\n    scanf(\"%c\", &ch);\n\n    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||\n        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')\n    {\n        printf(\"'%c' is Vowel.\", ch);\n    }\n    else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))\n    {\n        printf(\"'%c' is Consonant.\", ch);\n    }\n    else\n    {\n        printf(\"'%c' is not an alphabet.\", ch);\n    }\n\n    return 0;\n}\n\n\n/* using ASCII value */\n\n#include <stdio.h>\n\nint main()\n{\n    char ch;\n\n    printf(\"Enter any character: \");\n    scanf(\"%c\", &ch);\n\n    if(ch==97 || ch==101 || ch==105 || ch==111 || ch==117 || \n       ch==65 || ch==69  || ch==73  || ch==79  || ch==85)\n    {\n        printf(\"'%c' is Vowel.\", ch);\n    }\n    else if((ch >= 97 && ch <= 122) || (ch >= 65 && ch <= 90))\n    {\n        printf(\"'%c' is Consonant.\", ch);\n    }\n    else \n    {\n        printf(\"%c is not an alphabet.\", ch);\n    }\n\n    return 0;\n}",
+      "output": "Enter any character: f\n'f' is Consonant."
+    },
+    {
+      "indNum": "15",
+      "queName": "Enter week number and print day of week",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int week;\n\n    printf(\"Enter week number (1-7): \");\n    scanf(\"%d\", &week);\n\n    if (week == 1)\n    {\n        printf(\"Monday\");\n    }\n    else if (week == 2)\n    {\n        printf(\"Tuesday\");\n    }\n    else if (week == 3)\n    {\n        printf(\"Wednesday\");\n    }\n    else if (week == 4)\n    {\n        printf(\"Thursday\");\n    }\n    else if (week == 5)\n    {\n        printf(\"Friday\");\n    }\n    else if (week == 6)\n    {\n        printf(\"Saturday\");\n    }\n    else if (week == 7)\n    {\n        printf(\"Sunday\");\n    }\n    else\n    {\n        printf(\"Invalid Input! Please enter week number between 1-7.\");\n    }\n\n    return 0;\n}",
+      "output": "Enter week number (1-7): 3\nWednesday"
+    },
+    {
+      "indNum": "16",
+      "queName": "Find number of days in month",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int month;\n\n    printf(\"Enter month number (1-12): \");\n    scanf(\"%d\", &month);\n\n    if(month == 1)\n    {\n        printf(\"31 days\");\n    }\n    else if(month == 2)\n    {\n        printf(\"28 or 29 days\");\n    }\n    else if(month == 3)\n    {\n        printf(\"31 days\");\n    }\n    else if(month == 4)\n    {\n        printf(\"30 days\");\n    }\n    else if(month == 5)\n    {\n        printf(\"31 days\");\n    }\n    else if(month == 6)\n    {\n        printf(\"30 days\");\n    }\n    else if(month == 7)\n    {\n        printf(\"31 days\");\n    }\n    else if(month == 8)\n    {\n        printf(\"31 days\");\n    }\n    else if(month == 9)\n    {\n        printf(\"30 days\");\n    }\n    else if(month == 10)\n    {\n        printf(\"31 days\");\n    }\n    else if(month == 11)\n    {\n        printf(\"30 days\");\n    }\n    else if(month == 12)\n    {\n        printf(\"31 days\");\n    }\n    else\n    {\n        printf(\"Invalid input! Please enter month number between (1-12).\");\n    }\n\n    return 0;\n}",
+      "output": "Enter month number (1-12): 5\n31 days"
+    },
+    {
+      "indNum": "17",
+      "queName": "Calculate percentage and grade",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int phy, chem, bio, math, comp; \n    float per; \n\n    printf(\"Enter five subjects marks:\\n\");\n    scanf(\"%d%d%d%d%d\", &phy, &chem, &bio, &math, &comp);\n\n    per = (phy + chem + bio + math + comp) / 5.0;\n\n    printf(\"Percentage = %.2f\\n\", per);\n\n    if(per >= 90)\n    {\n        printf(\"Grade A\");\n    }\n    else if(per >= 80)\n    {\n        printf(\"Grade B\");\n    }\n    else if(per >= 70)\n    {\n        printf(\"Grade C\");\n    }\n    else if(per >= 60)\n    {\n        printf(\"Grade D\");\n    }\n    else if(per >= 40)\n    {\n        printf(\"Grade E\");\n    }\n    else\n    {\n        printf(\"Grade F\");\n    }\n\n    return 0;\n}",
+      "output": "Enter five subjects marks:\n78\n98\n87\n76\n70\nPercentage = 81.80\nGrade B"
+    },
+    {
+      "indNum": "18",
+      "queName": "Check whether a char is Uppercase or Lowercase",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    char ch;\n\n    printf(\"Enter any character: \");\n    scanf(\"%c\", &ch);\n\n    if(ch >= 'A' && ch <= 'Z')\n    {\n        printf(\"'%c' is uppercase alphabet.\", ch);\n    }\n    else if(ch >= 'a' && ch <= 'z')\n    {\n        printf(\"'%c' is lowercase alphabet.\", ch);\n    }\n    else\n    {\n        printf(\"'%c' is not an alphabet.\", ch);\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter any character: a\n'a' is lowercase alphabet.\n\nRun 2:\nEnter any character: F\n'F' is uppercase alphabet."
+    },
+    {
+      "indNum": "19",
+      "queName": "Print natural numbers from 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n;\n\n    printf(\"Enter any number: \");\n    scanf(\"%d\", &n);\n\n    printf(\"Natural numbers from 1 to %d : \\n\", n);\n\n    for (i = 1; i <= n; i++)\n    {\n        printf(\"%d\\n\", i);\n    }\n\n    return 0;\n}",
+      "output": "Enter any number: 5\nNatural numbers from 1 to 5 :\n1\n2\n3\n4\n5"
+    },
+    {
+      "indNum": "20",
+      "queName": "Print natural numbers in reverse from n to 1 using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, start;\n\n    printf(\"Enter starting value: \");\n    scanf(\"%d\", &start);\n\n    for (i = start; i >= 1; i--)\n    {\n        printf(\"%d\\n\", i);\n    }\n\n    return 0;\n}",
+      "output": "Enter starting value: 10\n10\n9\n8\n7\n6\n5\n4\n3\n2\n1"
+    },
+    {
+      "indNum": "21",
+      "queName": "Print Alphabets from a to z using for loop",
+      "code": "/* without ASCII value */\n\n#include <stdio.h>\n\nint main()\n{\n    char ch;\n\n    printf(\"Alphabets from a - z are: \\n\");\n    for (ch = 'a'; ch <= 'z'; ch++)\n    {\n        printf(\"%c \", ch);\n    }\n\n    return 0;\n}\n\n\n/* using ASCII value */\n\n#include <stdio.h>\n\nint main()\n{\n    int i;\n\n    printf(\"Alphabets from a - z are: \\n\");\n\n    /* ASCII value of a=97 */\n    for (i = 97; i <= 122; i++)\n    {\n        printf(\"%c \", i);\n    }\n\n    return 0;\n}",
+      "output": "Alphabets from a - z are:\na b c d e f g h i j k l m n o p q r s t u v w x y z"
+    },
+    {
+      "indNum": "22",
+      "queName": "Print all Even numbers from 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n;\n\n    printf(\"Print all even numbers till: \");\n    scanf(\"%d\", &n);\n\n    printf(\"Even numbers from 1 to %d are: \\n\", n);\n\n    for (i = 1; i <= n; i++)\n    {\n        if (i % 2 == 0)\n        {\n            printf(\"%d\\n\", i);\n        }\n    }\n\n    return 0;\n}",
+      "output": "Print all even numbers till: 99\nEven numbers from 1 to 99 are:\n2\n4\n6\n8\n10\n12\n14\n16\n18\n20\n22\n24\n26\n28\n30\n32\n34\n36\n38\n40\n42\n44\n46\n48\n50\n52\n54\n56\n58\n60\n62\n64\n66\n68\n70\n72\n74\n76\n78\n80\n82\n84\n86\n88\n90\n92\n94\n96\n98"
+    },
+    {
+      "indNum": "23",
+      "queName": "Print all Odd numbers from 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n;\n\n    printf(\"Print odd numbers till: \");\n    scanf(\"%d\", &n);\n\n    printf(\"All odd numbers from 1 to %d are: \\n\", n);\n\n    for (i = 1; i <= n; i++)\n    {\n        if (i % 2 != 0)\n        {\n            printf(\"%d\\n\", i);\n        }\n    }\n\n    return 0;\n}",
+      "output": "Print odd numbers till: 15\nAll odd numbers from 1 to 15 are:\n1\n3\n5\n7\n9\n11\n13\n15"
+    },
+    {
+      "indNum": "24",
+      "queName": "Find sum of natural numbers from 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n, sum = 0;\n\n    printf(\"Enter upper limit: \");\n    scanf(\"%d\", &n);\n\n    for (i = 1; i <= n; i++)\n    {\n        sum += i;\n    }\n\n    printf(\"Sum of first %d natural numbers = %d\", n, sum);\n\n    return 0;\n}",
+      "output": "Enter upper limit: 6\nSum of first 6 natural numbers = 21"
+    },
+    {
+      "indNum": "25",
+      "queName": "Find sum of Even numbers between 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n, sum = 0;\n\n    printf(\"Enter upper limit: \");\n    scanf(\"%d\", &n);\n\n    for (i = 2; i <= n; i += 2)\n    {\n        sum += i;\n    }\n\n    printf(\"Sum of all even number between 1 to %d = %d\", n, sum);\n\n    return 0;\n}",
+      "output": "Enter upper limit: 5\nSum of all even number between 1 to 5 = 6"
+    },
+    {
+      "indNum": "26",
+      "queName": "Find sum of Odd numbers between 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n, sum = 0;\n\n    printf(\"Enter upper limit: \");\n    scanf(\"%d\", &n);\n\n    for (i = 1; i <= n; i += 2)\n    {\n        sum += i;\n    }\n\n    printf(\"Sum of odd numbers = %d\", sum);\n\n    return 0;\n}",
+      "output": "Enter upper limit: 9\nSum of odd numbers = 25"
+    },
+    {
+      "indNum": "27",
+      "queName": "Print Multiplication table of a given number using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, num;\n\n    printf(\"Enter number to print table: \");\n    scanf(\"%d\", &num);\n\n    for (i = 1; i <= 10; i++)\n    {\n        printf(\"%d * %d = %d\\n\", num, i, (num * i));\n    }\n\n    return 0;\n}",
+      "output": "Enter number to print table: 6\n6 * 1 = 6\n6 * 2 = 12\n6 * 3 = 18\n6 * 4 = 24\n6 * 5 = 30\n6 * 6 = 36\n6 * 7 = 42\n6 * 8 = 48\n6 * 9 = 54\n6 * 10 = 60"
+    },
+    {
+      "indNum": "28",
+      "queName": "Print ASCII values of all character using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i;\n\n    /* Print ASCII values from 0 to 255 */\n    for (i = 0; i <= 255; i++)\n    {\n        printf(\"ASCII value of character %c = %d\\n\", i, i);\n    }\n\n    return 0;\n}",
+      "output": "ASCII value of character   = 0\nASCII value of character ☺ = 1\nASCII value of character ☻ = 2\nASCII value of character ♥ = 3\nASCII value of character ♦ = 4\nASCII value of character ♣ = 5\nASCII value of character ♠ = 6\nASCII value of character  = 7\nASCII value of character = 8\nASCII value of character   = 9\nASCII value of character   = 10\nASCII value of character ♂ = 11\nASCII value of character ♀ = 12\n = 13 value of character\nASCII value of character ♫ = 14\nASCII value of character ☼ = 15\nASCII value of character ► = 16\nASCII value of character ◄ = 17\nASCII value of character ↕ = 18\nASCII value of character ‼ = 19\nASCII value of character ¶ = 20\nASCII value of character § = 21\nASCII value of character ▬ = 22\nASCII value of character ↨ = 23\nASCII value of character ↑ = 24\nASCII value of character ↓ = 25\nASCII value of character → = 26\nASCII value of character ← = 27\nASCII value of character ∟ = 28\nASCII value of character ↔ = 29\nASCII value of character ▲ = 30\nASCII value of character ▼ = 31\nASCII value of character   = 32\nASCII value of character ! = 33\nASCII value of character \" = 34\nASCII value of character # = 35\nASCII value of character $ = 36\nASCII value of character % = 37\nASCII value of character & = 38\nASCII value of character ' = 39\nASCII value of character ( = 40\nASCII value of character ) = 41\nASCII value of character * = 42\nASCII value of character + = 43\nASCII value of character , = 44\nASCII value of character - = 45\nASCII value of character . = 46\nASCII value of character / = 47\nASCII value of character 0 = 48\nASCII value of character 1 = 49\nASCII value of character 2 = 50\nASCII value of character 3 = 51\nASCII value of character 4 = 52\nASCII value of character 5 = 53\nASCII value of character 6 = 54\nASCII value of character 7 = 55\nASCII value of character 8 = 56\nASCII value of character 9 = 57\nASCII value of character : = 58\nASCII value of character ; = 59\nASCII value of character < = 60\nASCII value of character = = 61\nASCII value of character > = 62\nASCII value of character ? = 63\nASCII value of character @ = 64\nASCII value of character A = 65\nASCII value of character B = 66\nASCII value of character C = 67\nASCII value of character D = 68\nASCII value of character E = 69\nASCII value of character F = 70\nASCII value of character G = 71\nASCII value of character H = 72\nASCII value of character I = 73\nASCII value of character J = 74\nASCII value of character K = 75\nASCII value of character L = 76\nASCII value of character M = 77\nASCII value of character N = 78\nASCII value of character O = 79\nASCII value of character P = 80\nASCII value of character Q = 81\nASCII value of character R = 82\nASCII value of character S = 83\nASCII value of character T = 84\nASCII value of character U = 85\nASCII value of character V = 86\nASCII value of character W = 87\nASCII value of character X = 88\nASCII value of character Y = 89\nASCII value of character Z = 90\nASCII value of character [ = 91\nASCII value of character \\ = 92\nASCII value of character ] = 93\nASCII value of character ^ = 94\nASCII value of character _ = 95\nASCII value of character ` = 96\nASCII value of character a = 97\nASCII value of character b = 98\nASCII value of character c = 99\nASCII value of character d = 100\nASCII value of character e = 101\nASCII value of character f = 102\nASCII value of character g = 103\nASCII value of character h = 104\nASCII value of character i = 105\nASCII value of character j = 106\nASCII value of character k = 107\nASCII value of character l = 108\nASCII value of character m = 109\nASCII value of character n = 110\nASCII value of character o = 111\nASCII value of character p = 112\nASCII value of character q = 113\nASCII value of character r = 114\nASCII value of character s = 115\nASCII value of character t = 116\nASCII value of character u = 117\nASCII value of character v = 118\nASCII value of character w = 119\nASCII value of character x = 120\nASCII value of character y = 121\nASCII value of character z = 122\nASCII value of character { = 123\nASCII value of character | = 124\nASCII value of character } = 125\nASCII value of character ~ = 126\nASCII value of character ⌂ = 127\nASCII value of character Ç = 128\nASCII value of character ü = 129\nASCII value of character é = 130\nASCII value of character â = 131\nASCII value of character ä = 132\nASCII value of character à = 133\nASCII value of character å = 134\nASCII value of character ç = 135\nASCII value of character ê = 136\nASCII value of character ë = 137\nASCII value of character è = 138\nASCII value of character ï = 139\nASCII value of character î = 140\nASCII value of character ì = 141\nASCII value of character Ä = 142\nASCII value of character Å = 143\nASCII value of character É = 144\nASCII value of character æ = 145\nASCII value of character Æ = 146\nASCII value of character ô = 147\nASCII value of character ö = 148\nASCII value of character ò = 149\nASCII value of character û = 150\nASCII value of character ù = 151\nASCII value of character ÿ = 152\nASCII value of character Ö = 153\nASCII value of character Ü = 154\nASCII value of character ¢ = 155\nASCII value of character £ = 156\nASCII value of character ¥ = 157\nASCII value of character ₧ = 158\nASCII value of character ƒ = 159\nASCII value of character á = 160\nASCII value of character í = 161\nASCII value of character ó = 162\nASCII value of character ú = 163\nASCII value of character ñ = 164\nASCII value of character Ñ = 165\nASCII value of character ª = 166\nASCII value of character º = 167\nASCII value of character ¿ = 168\nASCII value of character ⌐ = 169\nASCII value of character ¬ = 170\nASCII value of character ½ = 171\nASCII value of character ¼ = 172\nASCII value of character ¡ = 173\nASCII value of character « = 174\nASCII value of character » = 175\nASCII value of character ░ = 176\nASCII value of character ▒ = 177\nASCII value of character ▓ = 178\nASCII value of character │ = 179\nASCII value of character ┤ = 180\nASCII value of character ╡ = 181\nASCII value of character ╢ = 182\nASCII value of character ╖ = 183\nASCII value of character ╕ = 184\nASCII value of character ╣ = 185\nASCII value of character ║ = 186\nASCII value of character ╗ = 187\nASCII value of character ╝ = 188\nASCII value of character ╜ = 189\nASCII value of character ╛ = 190\nASCII value of character ┐ = 191\nASCII value of character └ = 192\nASCII value of character ┴ = 193\nASCII value of character ┬ = 194\nASCII value of character ├ = 195\nASCII value of character ─ = 196\nASCII value of character ┼ = 197\nASCII value of character ╞ = 198\nASCII value of character ╟ = 199\nASCII value of character ╚ = 200\nASCII value of character ╔ = 201\nASCII value of character ╩ = 202\nASCII value of character ╦ = 203\nASCII value of character ╠ = 204\nASCII value of character ═ = 205\nASCII value of character ╬ = 206\nASCII value of character ╧ = 207\nASCII value of character ╨ = 208\nASCII value of character ╤ = 209\nASCII value of character ╥ = 210\nASCII value of character ╙ = 211\nASCII value of character ╘ = 212\nASCII value of character ╒ = 213\nASCII value of character ╓ = 214\nASCII value of character ╫ = 215\nASCII value of character ╪ = 216\nASCII value of character ┘ = 217\nASCII value of character ┌ = 218\nASCII value of character █ = 219\nASCII value of character ▄ = 220\nASCII value of character ▌ = 221\nASCII value of character ▐ = 222\nASCII value of character ▀ = 223\nASCII value of character α = 224\nASCII value of character ß = 225\nASCII value of character Γ = 226\nASCII value of character π = 227\nASCII value of character Σ = 228\nASCII value of character σ = 229\nASCII value of character µ = 230\nASCII value of character τ = 231\nASCII value of character Φ = 232\nASCII value of character Θ = 233\nASCII value of character Ω = 234\nASCII value of character δ = 235\nASCII value of character ∞ = 236\nASCII value of character φ = 237\nASCII value of character ε = 238\nASCII value of character ∩ = 239\nASCII value of character ≡ = 240\nASCII value of character ± = 241\nASCII value of character ≥ = 242\nASCII value of character ≤ = 243\nASCII value of character ⌠ = 244\nASCII value of character ⌡ = 245\nASCII value of character ÷ = 246\nASCII value of character ≈ = 247\nASCII value of character ° = 248\nASCII value of character ∙ = 249\nASCII value of character · = 250\nASCII value of character √ = 251\nASCII value of character ⁿ = 252\nASCII value of character ² = 253\nASCII value of character ■ = 254\nASCII value of character   = 255\n"
+    },
+    {
+      "indNum": "29",
+      "queName": "Print power of a number using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int base, exponent;\n    long long power = 1;\n    int i;\n\n    printf(\"Enter base: \");\n    scanf(\"%d\", &base);\n    printf(\"Enter exponent: \");\n    scanf(\"%d\", &exponent);\n\n    for (i = 1; i <= exponent; i++)\n    {\n        power = power * base;\n    }\n\n    printf(\"%d ^ %d = %lld\", base, exponent, power);\n\n    return 0;\n}",
+      "output": "Enter base: 5\nEnter exponent: 3\n5 ^ 3 = 125"
+    },
+    {
+      "indNum": "30",
+      "queName": "Find all factors of a number using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, num;\n\n    printf(\"Enter any number to find its factor: \");\n    scanf(\"%d\", &num);\n\n    printf(\"All factors of %d are: \\n\", num);\n\n    for (i = 1; i <= num; i++)\n    {\n        if (num % i == 0)\n        {\n            printf(\"%d, \", i);\n        }\n    }\n\n    return 0;\n}",
+      "output": "Enter any number to find its factor: 10\nAll factors of 10 are:\n1, 2, 5, 10,"
+    },
+    {
+      "indNum": "31",
+      "queName": "Find factorial of a number using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, num;\n    unsigned long long fact = 1;\n\n    printf(\"Enter any number to calculate factorial: \");\n    scanf(\"%d\", &num);\n\n    for (i = 1; i <= num; i++)\n    {\n        fact = fact * i;\n    }\n\n    printf(\"Factorial of %d = %llu\", num, fact);\n\n    return 0;\n}",
+      "output": "Enter any number to calculate factorial: 5\nFactorial of 5 = 120"
+    },
+    {
+      "indNum": "32",
+      "queName": "Check whether a number is prime number or not using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, num, isPrime;\n\n    isPrime = 1;\n\n    printf(\"Enter any number to check prime: \");\n    scanf(\"%d\", &num);\n\n    for (i = 2; i <= num / 2; i++)\n    {\n        if (num % i == 0)\n        {\n            isPrime = 0;\n            break;\n        }\n    }\n\n    if (isPrime == 1 && num > 1)\n    {\n        printf(\"%d is prime number\", num);\n    }\n    else\n    {\n        printf(\"%d is composite number\", num);\n    }\n\n    return 0;\n}",
+      "output": "Enter any number to check prime: 11\n11 is prime number"
+    },
+    {
+      "indNum": "33",
+      "queName": "Print all prime numbers between 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, j, end, isPrime;\n\n    printf(\"Find prime numbers between 1 to : \");\n    scanf(\"%d\", &end);\n\n    printf(\"All prime numbers between 1 to %d are:\\n\", end);\n\n    for (i = 2; i <= end; i++)\n    {\n        isPrime = 1;\n\n        for (j = 2; j <= i / 2; j++)\n        {\n            if (i % j == 0)\n            {\n                isPrime = 0;\n                break;\n            }\n        }\n\n        if (isPrime == 1)\n        {\n            printf(\"%d, \", i);\n        }\n    }\n\n    return 0;\n}",
+      "output": "Find prime numbers between 1 to : 50\nAll prime numbers between 1 to 50 are:\n2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,"
+    },
+    {
+      "indNum": "34",
+      "queName": "Find sum of prime numbers between 1 to n using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, j, end, isPrime, sum = 0;\n\n    printf(\"Find sum of all prime between 1 to : \");\n    scanf(\"%d\", &end);\n\n    for (i = 2; i <= end; i++)\n    {\n\n        isPrime = 1;\n        for (j = 2; j <= i / 2; j++)\n        {\n            if (i % j == 0)\n            {\n                isPrime = 0;\n                break;\n            }\n        }\n\n        if (isPrime == 1)\n        {\n            sum += i;\n        }\n    }\n\n    printf(\"Sum of all prime numbers between 1 to %d = %d\", end, sum);\n\n    return 0;\n}",
+      "output": "Find sum of all prime between 1 to : 11\nSum of all prime numbers between 1 to 11 = 28"
+    },
+    {
+      "indNum": "35",
+      "queName": "Print fibonacci series 1 upto n terms using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int a, b, c, i, terms;\n\n    printf(\"Enter number of terms: \");\n    scanf(\"%d\", &terms);\n\n    a = 0;\n    b = 1;\n    c = 0;\n\n    printf(\"Fibonacci terms: \\n\");\n\n    for (i = 1; i <= terms; i++)\n    {\n        printf(\"%d, \", c);\n\n        a = b;     // Copy n-1 to n-2\n        b = c;     // Copy current to n-1\n        c = a + b; // New term\n    }\n\n    return 0;\n}",
+      "output": "Enter number of terms: 10\nFibonacci terms:\n0, 1, 1, 2, 3, 5, 8, 13, 21, 34,"
+    },
+    {
+      "indNum": "36",
+      "queName": "Check whether a numbers is perfect or not using for loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, num, sum = 0;\n\n    printf(\"Enter any number to check perfect number: \");\n    scanf(\"%d\", &num);\n\n    for (i = 1; i <= num / 2; i++)\n    {\n        if (num % i == 0)\n        {\n            sum += i;\n        }\n    }\n\n    if (sum == num && num > 0)\n    {\n        printf(\"%d is PERFECT NUMBER\", num);\n    }\n    else\n    {\n        printf(\"%d is NOT PERFECT NUMBER\", num);\n    }\n\n    return 0;\n}",
+      "output": "Enter any number to check perfect number: 6\n6 is PERFECT NUMBER"
+    },
+    {
+      "indNum": "37",
+      "queName": "Find perfect numbers between 1 to n using for loop",
+      "code": "{\n      \"indNum\": \"1\",\n      \"queName\": \"\",\n      \"code\": \"\",\n      \"output\": \"\"\n    },",
+      "output": "All Perfect numbers between 1 to 100:\n6, 28,"
+    },
+    {
+      "indNum": "38",
+      "queName": "Print natural numbers from 1 to n using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, end;\n\n    printf(\"Print all natural numbers from 1 to : \");\n    scanf(\"%d\", &end);\n\n    i = 1;\n    while (i <= end)\n    {\n        printf(\"%d\\n\", i);\n        i++;\n    }\n\n    return 0;\n}",
+      "output": "Print all natural numbers from 1 to : 5\n1\n2\n3\n4\n5"
+    },
+    {
+      "indNum": "39",
+      "queName": "Print natural numbers in reverse from n to 1 using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int n;\n\n    printf(\"Enter value of n: \");\n    scanf(\"%d\", &n);\n\n    while (n >= 1)\n    {\n        printf(\"%d\\n\", n);\n        n--;\n    }\n\n    return 0;\n}",
+      "output": "Enter value of n: 5\n5\n4\n3\n2\n1"
+    },
+    {
+      "indNum": "40",
+      "queName": "Print Alphabets from a to z using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    char ch = 'a';\n\n    printf(\"Alphabets from a - z are: \\n\");\n    while(ch<='z')\n    {\n        printf(\"%c\\n\", ch);\n        ch++;\n    }\n\n    return 0;\n}",
+      "output": "Alphabets from a - z are:\na\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\n"
+    },
+    {
+      "indNum": "41",
+      "queName": "Print all Even numbers from 1 to n using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n;\n\n    printf(\"Print all even numbers till: \");\n    scanf(\"%d\", &n);\n\n    printf(\"All even numbers from 1 to %d are: \\n\", n);\n\n    i = 1;\n    while (i <= n)\n    {\n        if (i % 2 == 0)\n        {\n            printf(\"%d\\n\", i);\n        }\n\n        i++;\n    }\n\n    return 0;\n}",
+      "output": "Print all even numbers till: 10\nAll even numbers from 1 to 10 are:\n2\n4\n6\n8\n10"
+    },
+    {
+      "indNum": "42",
+      "queName": "Print all Odd numbers from 1 to n using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n;\n  \n    printf(\"Print all even numbers till: \");\n    scanf(\"%d\", &n);\n\n    printf(\"All odd numbers from 1 to %d are: \\n\", n);\n\n    i=1;\n    while(i<=n)\n    {\n        if(i%2!=0)\n        {\n            printf(\"%d\\n\", i);\n        }\n\n        i++;\n    }\n\n    return 0;\n}",
+      "output": "Print all even numbers till: 10\nAll odd numbers from 1 to 10 are:\n1\n3\n5\n7\n9\n"
+    },
+    {
+      "indNum": "43",
+      "queName": "Find sum of natural numbers from 1 to n using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n, sum = 0;\n\n    printf(\"Enter upper limit: \");\n    scanf(\"%d\", &n);\n\n    i = n;\n    while (i != 0)\n    {\n        sum += i;\n        i--;\n    }\n\n    printf(\"Sum of first %d natural numbers = %d\", n, sum);\n\n    return 0;\n}",
+      "output": "Enter upper limit: 5\nSum of first 5 natural numbers = 15"
+    },
+    {
+      "indNum": "44",
+      "queName": "Find sum of Even numbers between 1 to n using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n, sum = 0;\n\n    printf(\"Enter upper limit: \");\n    scanf(\"%d\", &n);\n\n    i = n;\n    while (i != 0)\n    {\n        if (i % 2 == 0)\n        {\n            sum += i;\n        }\n        i--;\n    }\n\n    printf(\"Sum of all even number between 1 to %d = %d\", n, sum);\n\n    return 0;\n}",
+      "output": "Enter upper limit: 10\nSum of all even number between 1 to 10 = 30"
+    },
+    {
+      "indNum": "45",
+      "queName": "Find sum of Odd numbers between 1 to n using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, n, sum = 0;\n\n    printf(\"Enter upper limit: \");\n    scanf(\"%d\", &n);\n\n    i = n;\n    while (i != 0)\n    {\n        if (i % 2 != 0)\n        {\n            sum += i;\n        }\n        i--;\n    }\n\n    printf(\"Sum of all even number between 1 to %d = %d\", n, sum);\n\n    return 0;\n}",
+      "output": "Enter upper limit: 10\nSum of all even number between 1 to 10 = 25"
+    },
+    {
+      "indNum": "46",
+      "queName": "Print Multiplication table of a given number using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int i, num;\n\n    printf(\"Enter number to print table: \");\n    scanf(\"%d\", &num);\n\n    i = 1;\n    while (i <= 10)\n    {\n        printf(\"%d * %d = %d\\n\", num, i, (num * i));\n        i++;\n    }\n\n    return 0;\n}",
+      "output": "Enter number to print table: 5\n5 * 1 = 5\n5 * 2 = 10\n5 * 3 = 15\n5 * 4 = 20\n5 * 5 = 25\n5 * 6 = 30\n5 * 7 = 35\n5 * 8 = 40\n5 * 9 = 45\n5 * 10 = 50"
+    },
+    {
+      "indNum": "47",
+      "queName": "Count number of digits in integer using While Loop",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    long long num;\n    int count = 0;\n\n    printf(\"Enter any number: \");\n    scanf(\"%lld\", &num);\n\n    do\n    {\n        count++;\n        num /= 10;\n    } while (num != 0);\n\n    printf(\"Total digits: %d\", count);\n\n    return 0;\n}",
+      "output": "Enter any number: 78343\nTotal digits: 5"
+    },
+    {
+      "indNum": "48",
+      "queName": "Print day of name",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int week;\n\n    printf(\"Enter week number(1-7): \");\n    scanf(\"%d\", &week);\n\n    switch (week)\n    {\n    case 1:\n        printf(\"Monday\");\n        break;\n    case 2:\n        printf(\"Tuesday\");\n        break;\n    case 3:\n        printf(\"Wednesday\");\n        break;\n    case 4:\n        printf(\"Thursday\");\n        break;\n    case 5:\n        printf(\"Friday\");\n        break;\n    case 6:\n        printf(\"Saturday\");\n        break;\n    case 7:\n        printf(\"Sunday\");\n        break;\n    default:\n        printf(\"Invalid input! Please enter week number between 1-7.\");\n    }\n\n    return 0;\n}",
+      "output": "Enter week number(1-7): 4\nThursday"
+    },
+    {
+      "indNum": "49",
+      "queName": "Print number of days in a month",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int month;\n\n    printf(\"Enter month number(1-12): \");\n    scanf(\"%d\", &month);\n\n    switch (month)\n    {\n    case 1:\n        printf(\"31 days\");\n        break;\n    case 2:\n        printf(\"28/29 days\");\n        break;\n    case 3:\n        printf(\"31 days\");\n        break;\n    case 4:\n        printf(\"30 days\");\n        break;\n    case 5:\n        printf(\"31 days\");\n        break;\n    case 6:\n        printf(\"30 days\");\n        break;\n    case 7:\n        printf(\"31 days\");\n        break;\n    case 8:\n        printf(\"31 days\");\n        break;\n    case 9:\n        printf(\"30 days\");\n        break;\n    case 10:\n        printf(\"31 days\");\n        break;\n    case 11:\n        printf(\"30 days\");\n        break;\n    case 12:\n        printf(\"31 days\");\n        break;\n    default:\n        printf(\"Invalid input! Please enter month number between 1-12\");\n    }\n\n    return 0;\n}",
+      "output": "Enter month number(1-12): 6\n30 days"
+    },
+    {
+      "indNum": "50",
+      "queName": "Check vowel or consonant",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    char ch;\n\n    printf(\"Enter any alphabet: \");\n    scanf(\"%c\", &ch);\n\n    switch (ch)\n    {\n    case 'a':\n        printf(\"Vowel\");\n        break;\n    case 'e':\n        printf(\"Vowel\");\n        break;\n    case 'i':\n        printf(\"Vowel\");\n        break;\n    case 'o':\n        printf(\"Vowel\");\n        break;\n    case 'u':\n        printf(\"Vowel\");\n        break;\n    case 'A':\n        printf(\"Vowel\");\n        break;\n    case 'E':\n        printf(\"Vowel\");\n        break;\n    case 'I':\n        printf(\"Vowel\");\n        break;\n    case 'O':\n        printf(\"Vowel\");\n        break;\n    case 'U':\n        printf(\"Vowel\");\n        break;\n    default:\n        printf(\"Consonant\");\n    }\n\n    return 0;\n}",
+      "output": "Enter any alphabet: f\nConsonant"
+    },
+    {
+      "indNum": "51",
+      "queName": "Find maximum between two number",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num1, num2;\n\n    printf(\"Enter two numbers to find maximum: \");\n    scanf(\"%d%d\", &num1, &num2);\n\n    switch (num1 > num2)\n    {\n    case 0:\n        printf(\"%d is maximum\", num2);\n        break;\n\n    case 1:\n        printf(\"%d is maximum\", num1);\n        break;\n    }\n\n    return 0;\n}",
+      "output": "Enter two numbers to find maximum: 10\n3\n10 is maximum"
+    },
+    {
+      "indNum": "52",
+      "queName": "Check even or odd number",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Enter any number to check even or odd: \");\n    scanf(\"%d\", &num);\n\n    switch (num % 2)\n    {\n    case 0:\n        printf(\"Number is Even\");\n        break;\n\n    case 1:\n        printf(\"Number is Odd\");\n        break;\n    }\n\n    return 0;\n}",
+      "output": "Enter any number to check even or odd: 5\nNumber is Odd"
+    },
+    {
+      "indNum": "53",
+      "queName": "Check positive, negative or zero",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int num;\n\n    printf(\"Enter any number: \");\n    scanf(\"%d\", &num);\n\n    switch (num > 0)\n    {\n    case 1:\n        printf(\"%d is positive.\", num);\n        break;\n\n    case 0:\n        switch (num < 0)\n        {\n        case 1:\n            printf(\"%d is negative.\", num);\n            break;\n        case 0:\n            printf(\"%d is zero.\", num);\n            break;\n        }\n        break;\n    }\n\n    return 0;\n}",
+      "output": "Enter any number: 5\n5 is positive."
+    },
+    {
+      "indNum": "54",
+      "queName": "Simple calculator",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    char op;\n    float num1, num2, result=0.0f;\n\n    printf(\"WELCOME TO SIMPLE CALCULATOR\\n\");\n    printf(\"----------------------------\\n\");\n    printf(\"Enter [number 1] [+ - * /] [number 2]\\n\");\n\n    scanf(\"%f %c %f\", &num1, &op, &num2);\n\n    switch(op)\n    {\n        case '+': \n            result = num1 + num2;\n            break;\n\n        case '-': \n            result = num1 - num2;\n            break;\n\n        case '*': \n            result = num1 * num2;\n            break;\n\n        case '/': \n            result = num1 / num2;\n            break;\n\n        default: \n            printf(\"Invalid operator\");\n    }\n\n    printf(\"%.2f %c %.2f = %.2f\", num1, op, num2, result);\n\n    return 0;\n}",
+      "output": "WELCOME TO SIMPLE CALCULATOR\n----------------------------\nEnter [number 1] [+ - * /] [number 2]\n1+2\n1.00 + 2.00 = 3.00"
+    },
+    {
+      "indNum": "55",
+      "queName": "Area of Circle",
+      "code": "#include <stdio.h>\n// Defining the value of pi upto 6 decimal places\n#define pi 3.141592\nint main()\n{\n    float radius;\n    printf(\"Enter Radius of Circle:\\n\");\n    scanf(\"%f\", &radius);\n    float area = pi * radius * radius;\n\n    printf(\"The area of Circle with radius %0.2f is: %0.2f\", radius, area);\n    return 0;\n}",
+      "output": "Enter Radius of Circle:\n5\nThe area of Circle with radius 5.00 is: 78.54"
+    },
+    {
+      "indNum": "56",
+      "queName": "Area of Triangle",
+      "code": "#include <stdio.h>\nvoid main()\n{\n    float base, height;\n    printf(\"Enter Base and Height: \");\n    scanf(\"%f %f\", &base, &height);\n    float area = (base * height) / 2;\n\n    printf(\"Area of Triangle is %0.2f\", area);\n}",
+      "output": "Enter Base and Height: 5\n10\nArea of Triangle is 25.00"
+    },
+    {
+      "indNum": "57",
+      "queName": "Area of Parallelogram",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    float base, altitude;\n    float area;\n\n    printf(\"Enter base and altitude of the given Parallelogram: \\n \");\n    scanf(\"%f%f\", &base, &altitude);\n\n    area = base * altitude;\n\n    printf(\"Area of Parallelogram is: %.3f\\n\", area);\n    return 0;\n}",
+      "output": "Enter base and altitude of the given Parallelogram:\n 17 19\nArea of Parallelogram is: 323.000"
+    },
+    {
+      "indNum": "58",
+      "queName": "Area of Rhombus",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    float diagonal1, diagonal2;\n    float area;\n\n    printf(\"Enter diagonals of the given rhombus: \\n \");\n    scanf(\"%f%f\", &diagonal1, &diagonal2);\n\n    area = 0.5 * diagonal1 * diagonal2;\n\n    printf(\"Area of rhombus is: %.3f \\n\", area);\n    return 0;\n}",
+      "output": "Enter diagonals of the given rhombus:\n 30 40\nArea of rhombus is: 600.000"
+    },
+    {
+      "indNum": "59",
+      "queName": "Area of Trapezium",
+      "code": "#include <stdio.h>\n \nint main()\n{\n    float a, b, h;\n    float area;\n \n    printf(\"Enter the value for two bases & height of the trapezium: \\n\");\n    scanf(\"%f%f%f\", &a, &b, &h);\n    \n    area = 0.5 * (a + b) * h ;\n\n    printf(\"Area of the trapezium is: %.3f\", area);\n    return 0;\n}",
+      "output": "Enter the value for two bases and height of the trapezium :\n10 15 20\nArea of the trapezium is: 250.000"
+    }
+  ],
+  "Conversion": [
+    {
+      "indNum": "1",
+      "queName": "Binary to Decimal",
+      "code": "#include <stdio.h>\nint main()\n{\n    long long bNum;\n    int dNum = 0, i = 0, rem;\n\n    printf(\"enter a binary (0-1) number: \");\n    scanf(\"%lld\", &bNum);\n\n    while (bNum != 0)\n    {\n        rem = bNum % 10;\n        dNum += rem * pow(2, i);\n        bNum /= 10;\n        i++;\n    }\n\n    printf(\"Decimal equivalent: %d\", dNum);\n\n    return 0;\n}",
+      "output": "Run 1:\nenter a binary (0-1) number: 1101\nDecimal equivalent: 13\n\nRun 2:\nenter a binary (0-1) number: 101010101\nDecimal equivalent: 341"
+    },
+    {
+      "indNum": "2",
+      "queName": "Binary to Hexadecimal",
+      "code": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main()\n{\n    char binaryNumber[100];\n    printf(\"Enter a binary number: \");\n    scanf(\"%s\", binaryNumber);\n\n    // Convert binary to decimal\n    int decimalNumber = 0;\n    int length = strlen(binaryNumber);\n\n    for (int i = 0; i < length; i++)\n    {\n        if (binaryNumber[i] == '1')\n        {\n            decimalNumber += 1 << (length - i - 1);\n        }\n\n        else if (binaryNumber[i] != '0')\n        {\n            printf(\"Invalid binary input.\\n\");\n            return 1; // Exit with an error code\n        }\n    }\n\n    // Convert decimal to hexadecimal\n    char hexadecimalNumber[100];\n    sprintf(hexadecimalNumber, \"%X\", decimalNumber);\n\n    printf(\"Hexadecimal equivalent: %s\\n\", hexadecimalNumber);\n\n    return 0;\n}\n",
+      "output": "Enter a binary number: 101010\nHexadecimal equivalent: 2A"
+    },
+    {
+      "indNum": "3",
+      "queName": "Binary to Octal",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int decimal, octal = 0, i = 1;\n\n    printf(\"Enter a decimal number: \");\n    scanf(\"%d\", &decimal);\n\n    while (decimal != 0)\n    {\n        octal += (decimal % 8) * i;\n        decimal /= 8;\n        i *= 10;\n    }\n\n    printf(\"The octal equivalent is %d\\n\", octal);\n\n    return 0;\n}",
+      "output": "Enter the value for binary number: 1011\nEquivalent octal value: 13"
+    },
+    {
+      "indNum": "4",
+      "queName": "Decimal to Binary",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int decimal, binary[10], i;\n\n    // Get the decimal number from the user.\n    printf(\"Enter a decimal number: \");\n    scanf(\"%d\", &decimal);\n\n    // Convert the decimal number to binary.\n    for (i = 0; decimal > 0; i++)\n    {\n        binary[i] = decimal % 2;\n        decimal /= 2;\n    }\n\n    // Print the binary number.\n    printf(\"The binary number is: \");\n    for (i = i - 1; i >= 0; i--)\n    {\n        printf(\"%d\", binary[i]);\n    }\n\n    printf(\"\\n\");\n\n    return 0;\n}",
+      "output": "Enter a decimal number: 23\nThe binary number is: 10111"
+    },
+    {
+      "indNum": "5",
+      "queName": "Decimal to hexadecimal",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int decimalNumber;\n    char hexadecimalNumber[100];\n\n    printf(\"Enter a decimal number: \");\n    scanf(\"%d\", &decimalNumber);\n\n    int i = 0;\n    while (decimalNumber > 0)\n    {\n        int remainder = decimalNumber % 16;\n        if (remainder < 10)\n        {\n            hexadecimalNumber[i++] = remainder + '0';\n        }\n        else\n        {\n            hexadecimalNumber[i++] = remainder + 'A' - 10;\n        }\n        decimalNumber /= 16;\n    }\n\n    hexadecimalNumber[i] = '\\0';\n\n    printf(\"The hexadecimal number is: %s\\n\", hexadecimalNumber);\n\n    return 0;\n}",
+      "output": "Enter a decimal number: 450\nThe hexadecimal number is: 2C1"
+    },
+    {
+      "indNum": "6",
+      "queName": "Decimal to Octal",
+      "code": "#include <stdio.h>\n\nint main() {\n  int decimal, octal = 0, i = 1;\n\n  printf(\"Enter a decimal number: \");\n  scanf(\"%d\", &decimal);\n\n  while (decimal != 0) {\n    octal += (decimal % 8) * i;\n    decimal /= 8;\n    i *= 10;\n  }\n\n  printf(\"The octal equivalent is %d\\n\", octal);\n\n  return 0;\n}",
+      "output": "Enter a decimal number: 100\nThe octal equivalent is 144"
+    },
+    {
+      "indNum": "7",
+      "queName": "Hexadecimal to Binary",
+      "code": "#include <stdio.h>\n#define MAX 100\n\nint main()\n{\n    char hex[MAX];\n    long int i = 0;\n\n    printf(\"Enter a hexadecimal number: \");\n    gets(hex);\n\n    printf(\"Equivalent binary value: \");\n    while (hex[i])\n    {\n        switch (hex[i])\n        {\n        case '0':\n            printf(\"0000\");\n            break;\n        case '1':\n            printf(\"0001\");\n            break;\n        case '2':\n            printf(\"0010\");\n            break;\n        case '3':\n            printf(\"0011\");\n            break;\n        case '4':\n            printf(\"0100\");\n            break;\n        case '5':\n            printf(\"0101\");\n            break;\n        case '6':\n            printf(\"0110\");\n            break;\n        case '7':\n            printf(\"0111\");\n            break;\n        case '8':\n            printf(\"1000\");\n            break;\n        case '9':\n            printf(\"1000\");\n            break;\n        case 'A':\n            printf(\"1010\");\n            break;\n        case 'a':\n            printf(\"1010\");\n            break;\n        case 'B':\n            printf(\"1011\");\n            break;\n        case 'b':\n            printf(\"1011\");\n            break;\n        case 'C':\n            printf(\"1100\");\n            break;\n        case 'c':\n            printf(\"1100\");\n            break;\n        case 'D':\n            printf(\"1101\");\n            break;\n        case 'd':\n            printf(\"1101\");\n            break;\n        case 'E':\n            printf(\"1110\");\n            break;\n        case 'e':\n            printf(\"1110\");\n            break;\n        case 'F':\n            printf(\"1111\");\n            break;\n        case 'f':\n            printf(\"1111\");\n            break;\n        default:\n            printf(\"\\nInvalid hexadecimal digit %c\", hex[i]);\n            return;\n        }\n        i++;\n    }\n}",
+      "output": "Enter a hexadecimal number: 1Ac\nEquivalent binary value: 000110101100"
+    },
+    {
+      "indNum": "8",
+      "queName": "Hexadecimal to Decimal",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    char hexadecimal[10];\n    int decimal;\n\n    printf(\"Enter a hexadecimal number: \");\n    scanf(\"%s\", hexadecimal);\n\n    decimal = strtol(hexadecimal, NULL, 16);\n\n    printf(\"The decimal number is: %d\\n\", decimal);\n\n    return 0;\n}",
+      "output": "Enter a hexadecimal number: 1E\nThe decimal number is: 30"
+    },
+    {
+      "indNum": "9",
+      "queName": "Hexadecimal to Octal",
+      "code": "#include <stdio.h>\n\nint main() {\n  char hexadecimalNumber[5];\n  int octalNumber;\n\n  printf(\"Enter a hexadecimal number: \");\n  scanf(\"%s\", hexadecimalNumber);\n\n  octalNumber = strtol(hexadecimalNumber, NULL, 16);\n\n  printf(\"The octal number is %o\\n\", octalNumber);\n\n  return 0;\n}",
+      "output": "Enter a hexadecimal number: FF\n\nThe octal number is 377"
+    },
+    {
+      "indNum": "10",
+      "queName": "Octal to Binary",
+      "code": "#include <stdio.h>\n#define MAX 1000\n \nint main()\n{\n    char octalnum[MAX];\n    long i = 0;\n \n    printf(\"Enter any octal number: \");\n    scanf(\"%s\", octalnum);\n    printf(\"Equivalent binary value: \");\n    while (octalnum[i])\n    {\n        switch (octalnum[i])\n        {\n        case '0':\n            printf(\"000\"); break;\n        case '1':\n            printf(\"001\"); break;\n        case '2':\n            printf(\"010\"); break;\n        case '3':\n            printf(\"011\"); break;\n        case '4':\n            printf(\"100\"); break;\n        case '5':\n            printf(\"101\"); break;\n        case '6':\n            printf(\"110\"); break;\n        case '7':\n            printf(\"111\"); break;\n        default:\n            printf(\"\\n Invalid octal digit %c \", octalnum[i]);\n            return 0;\n        }\n        i++;\n    }\n    return 0;\n}",
+      "output": "Enter any octal number: 11\nEquivalent binary value: 001001"
+    },
+    {
+      "indNum": "11",
+      "queName": "Octal to Decimal",
+      "code": "#include <stdio.h>\n#include <math.h>\n \nint main()\n{\n \n    long int octal, decimal = 0;\n    int i = 0;\n \n    printf(\"Enter any octal number: \");\n    scanf(\"%ld\", &octal);\n    while (octal != 0)\n    {\n        decimal =  decimal +(octal % 10)* pow(8, i++);\n        octal = octal / 10;\n    }\n    printf(\"Equivalent decimal value: %ld\",decimal);\n    return 0;\n}",
+      "output": "Enter any octal number: 67\nEquivalent decimal value: 55"
+    },
+    {
+      "indNum": "12",
+      "queName": "Octal to Hexadecimal",
+      "code": "#include <math.h>\n#include <stdio.h>\n\nvoid decimal_hexa(int num);\nvoid octal_hexa(int octal)\n{\n    int decimal = 0, i = 0;\n    long long binary = 0;\n    // convert octal to decimal\n    while (octal != 0)\n    {\n        decimal += (octal % 10) * pow(8, i);\n        ++i;\n        octal /= 10;\n    }\n    i = 1;\n    // convert decimal to hexa\n    decimal_hexa(decimal);\n}\n\n// Method to convert decimal to hexadecimal\nvoid decimal_hexa(int num)\n{\n    int rem;\n    int base = 16;\n    long int h = 0;\n\n    if (num != 0)\n    {\n        rem = num % base;\n        decimal_hexa(num / base);\n        if (rem >= 10)\n        {\n            printf(\"%c\", rem + 55);\n        }\n        else\n        {\n            printf(\"%d\", rem);\n        }\n    }\n}\n\nint main()\n{\n    int octal;\n    printf(\"Enter an octal number: \");\n    scanf(\"%d\", &octal);\n    printf(\"Hexadecimal equivalent is:\");\n    octal_hexa(octal);\n    return 0;\n}",
+      "output": "Enter an octal number: 345\nHexadecimal equivalent is:E5"
+    }
+  ],
+  "Matrix (2D Array)": [
+    {
+      "indNum": "1",
+      "queName": "Showing elements of matrix",
+      "code": "#include <stdio.h>\n#define max 10\n\nint main() \n{\n  int matrix[max][max];\n  int i, j;\n  int r, c;\n  \n  printf(\"Enter number of rows: \");\n  scanf(\"%d\", &r);\n  printf(\"Enter number of columns: \");\n  scanf(\"%d\", &c);\n  \n  for (i = 0; i < r; i++) {\n    printf(\"\\n\");\n    for (j = 0; j < c; j++) {\n      printf(\"Enter data in [%d][%d]: \", i, j);\n      scanf(\"%d\", &matrix[i][j]);\n    }\n  }\n  \n  printf(\"\\nDisplay the matrix:\\n\");\n  for (i = 0; i < r; i++) {\n    for (j = 0; j < c; j++) {\n      printf(\"%d\\t\",matrix[i][j]);\n    }\n    printf(\"\\n\");\n  }\n  \n  return 0;\n}",
+      "output": "Enter number of rows: 3\nEnter number of columns: 3\n\nEnter data in [0][0]: 4\nEnter data in [0][1]: 2\nEnter data in [0][2]: 5\n\nEnter data in [1][0]: 7\nEnter data in [1][1]: 8\nEnter data in [1][2]: 9\n\nEnter data in [2][0]: 35\nEnter data in [2][1]: 34\nEnter data in [2][2]: 12\n\nDisplay the matrix:\n4       2       5\n7       8       9\n35      34      12"
+    },
+    {
+      "indNum": "2",
+      "queName": "Sum of two matrices",
+      "code": "#include<stdio.h>\n\nint main()\n{\n  // Declare the variables.\n  int i, j, m, n;\n  int a[10][10], b[10][10], c[10][10];\n\n  // Get the input from the user.\n  printf(\"Enter number of rows: \");\n  scanf(\"%d\", &m);\n  printf(\"Enter number of columns: \");\n  scanf(\"%d\", &n);\n\n  printf(\"\\nEnter the elements of the first matrix:\\n\");\n  for (i = 0; i < m; i++)\n    for (j = 0; j < n; j++)\n      scanf(\"%d\", &a[i][j]);\n\n  printf(\"\\nEnter the elements of the second matrix:\\n\");\n\n  for (i = 0; i < m; i++)\n    for (j = 0; j < n; j++)\n      scanf(\"%d\", &b[i][j]);\n\n  // Add the matrices.\n  for (i = 0; i < m; i++)\n    for (j = 0; j < n; j++)\n      c[i][j] = a[i][j] + b[i][j];\n\n  // Print the sum of the matrices.\n  printf(\"\\nThe sum of the two matrices is:\\n\");\n  for (i = 0; i < m; i++) {\n    for (j = 0; j < n; j++)\n      printf(\"%d \", c[i][j]);\n      printf(\"\\n\");\n  }\n  \n  return 0;\n}",
+      "output": "Enter number of rows: 3\nEnter number of columns: 3\n\nEnter the elements of the first matrix:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\nEnter the elements of the second matrix:\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\nThe sum of the two matrices is:\n10 10 10\n10 10 10\n10 10 10"
+    },
+    {
+      "indNum": "3",
+      "queName": "Multiplication of two matrices",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int r1, r2, c1, c2;\n    int i, j, k;\n    printf(\"Enter number of rows for First Matrix:\\n\");\n    scanf(\"%d\", &r1);\n    printf(\"Enter number of columns for First Matrix:\\n\");\n    scanf(\"%d\", &c1);\n    printf(\"Enter number of rows for Second Matrix:\\n\");\n    scanf(\"%d\", &r2);\n    printf(\"Enter number of columns for Second Matrix:\\n\");\n    scanf(\"%d\", &c2);\n    if (c1 != r2)\n    {\n        printf(\"Matrices Can't be multiplied together\");\n    }\n    else\n    {\n        int m1[r1][c1], m2[r2][c2];\n        printf(\"Enter first matrix elements \\n\");\n        for (i = 0; i < r1; i++)\n        {\n            for (j = 0; j < c1; j++)\n            {\n                scanf(\"%d\", &m1[i][j]);\n            }\n        }\n        printf(\"Enter Second matrix elements\\n\");\n        for (i = 0; i < r2; i++)\n        {\n            for (j = 0; j < c2; j++)\n            {\n                scanf(\"%d\", &m2[i][j]);\n            }\n        }\n        int mul[r1][c2];\n        for (i = 0; i < r1; i++)\n        {\n            for (j = 0; j < c2; j++)\n            {\n                mul[i][j] = 0;\n\n                // Multiplying i’th row with j’th column\n                for (k = 0; k < c1; k++)\n                {\n                    mul[i][j] += m1[i][k] * m2[k][j];\n                }\n            }\n        }\n        printf(\"Multiplied matrix\\n\");\n        for (i = 0; i < r1; i++)\n        {\n            for (j = 0; j < c2; j++)\n            {\n                printf(\"%d\\t\", mul[i][j]);\n            }\n            printf(\"\\n\");\n        }\n    }\n    return 0;\n}",
+      "output": "Enter number of rows for First Matrix:\n2\nEnter number of columns for First Matrix:\n2\nEnter number of rows for Second Matrix:\n2\nEnter number of columns for Second Matrix:\n2\nEnter first matrix elements\n1 3\n2 4\nEnter Second matrix elements\n2 4\n3 2\nMultiplied matrix\n11      10\n16      16"
+    },
+    {
+      "indNum": "4",
+      "queName": "Square of a Matrix",
+      "code": "#include <stdio.h>\n#include <math.h>\n\nint main()\n{\n\n    int row_size, col_size;\n    // Get size of matrix\n    printf(\"Enter the row Size Of the Matrix:\");\n    scanf(\"%d\", &row_size);\n    printf(\"Enter the columns Size Of the Matrix:\");\n    scanf(\"%d\", &col_size);\n\n    int matrix[row_size][col_size];\n\n    // Taking input of the matrix\n    int i, j;\n    printf(\"\\nEnter the Matrix Element:\\n\");\n    for (i = 0; i < row_size; i++)\n    {\n        for (j = 0; j < col_size; j++)\n        {\n            scanf(\"%d\", &matrix[i][j]);\n        }\n    }\n\n    // compute square of the matrix\n    for (i = 0; i < row_size; i++)\n    {\n        for (j = 0; j < col_size; j++)\n        {\n            matrix[i][j] = pow(matrix[i][j], 2);\n        }\n    }\n    // display square of the matrix\n    printf(\"\\nSquare of the Matrix elements are:\\n\");\n    for (i = 0; i < row_size; i++)\n    {\n        for (j = 0; j < col_size; j++)\n        {\n            printf(\"%d\t\", matrix[i][j]);\n        }\n        printf(\"\\n\");\n    }\n}",
+      "output": "Enter the row Size Of the Matrix:3\nEnter the columns Size Of the Matrix:3\n\nEnter the Matrix Element:\n4\n5\n7\n23\n1\n2\n3\n5\n6\n\nSquare of the Matrix elements are:\n16      25      49\n529     1       4\n9       25      36"
+    },
+    {
+      "indNum": "5",
+      "queName": "Check for a Sparse Matrix",
+      "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint main()\n{\n    int row, col, i, j, a[10][10], count = 0;\n    printf(\"Enter number of rows: \");\n    scanf(\"%d\", &row);\n    printf(\"Enter number of columns: \");\n    scanf(\"%d\", &col);\n    printf(\"\\nEnter Element of Matrix: \\n\");\n    for (i = 0; i < row; i++)\n    {\n        for (j = 0; j < col; j++)\n        {\n            scanf(\"%d\", &a[i][j]);\n        }\n    }\n    printf(\"\\nElements are:\\n\");\n    for (i = 0; i < row; i++)\n    {\n        for (j = 0; j < col; j++)\n        {\n            printf(\"%d\\t\", a[i][j]);\n        }\n        printf(\"\\n\");\n    }\n    /*checking sparse of matrix*/\n    for (i = 0; i < row; i++)\n    {\n        for (j = 0; j < col; j++)\n        {\n            if (a[i][j] == 0)\n                count++;\n        }\n    }\n    if (count > ((row * col) / 2))\n        printf(\"\\nMatrix is a sparse matrix \");\n    else\n        printf(\"\\nMatrix is not sparse matrix\");\n\n    return 0;\n}",
+      "output": "Enter number of rows: 3\nEnter number of columns: 3\n\nEnter Element of Matrix:\n1 2 4\n0 0 0\n3 0 0\n\nElements are:\n1       2       4\n0       0       0\n3       0       0\n\nMatrix is a sparse matrix"
+    },
+    {
+      "indNum": "6",
+      "queName": "Transpose of a Matrix",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    // Declare and initialize the matrix.\n    int i, j, m, n;\n\n    printf(\"Enter number of rows: \");\n    scanf(\"%d\", &m);\n    printf(\"Enter number of columns: \");\n    scanf(\"%d\", &n);\n\n    int a[m][n];\n    printf(\"\\nEnter the elements of the matrix: \\n\");\n    for (i = 0; i < m; i++)\n    {\n        for (j = 0; j < n; j++)\n        {\n            scanf(\"%d\", &a[i][j]);\n        }\n    }\n\n    // Find the transpose of the matrix.\n    int b[n][m];\n    for (i = 0; i < m; i++)\n    {\n        for (j = 0; j < n; j++)\n        {\n            b[j][i] = a[i][j];\n        }\n    }\n\n    // Print the transpose of the matrix.\n    printf(\"\\nThe transpose of the matrix is: \\n\");\n    for (i = 0; i < n; i++)\n    {\n        for (j = 0; j < m; j++)\n        {\n            printf(\"%d \", b[i][j]);\n        }\n        printf(\"\\n\");\n    }\n\n    return 0;\n}",
+      "output": "Enter number of rows: 3\nEnter number of columns: 3\n\nEnter the elements of the matrix:\n1 2 3\n4 5 6\n7 8 9\n\nThe transpose of the matrix is:\n1 4 7\n2 5 8\n3 6 9"
+    },
+    {
+      "indNum": "7",
+      "queName": "Check for a Symmetric Matrix",
+      "code": "\n#include <stdio.h>\n#include <stdlib.h>\n\nint main()\n{\n    int i, j, row, col, count = 0;\n\n    printf(\"Enter number of rows: \");\n    scanf(\"%d\", &i);\n    printf(\"Enter number of columns: \");\n    scanf(\"%d\", &j);\n\n    if (i != j)\n    {\n        printf(\"Rows not equal to columns. Therefore Non-Symmetric Matrix.\");\n        exit(0);\n    }\n\n    // Initialize 2d-array of size i,j.\n    int a[i][j], b[i][j];\n\n    printf(\"\\nEnter the Matrix Elements \\n\");\n    for (row = 0; row < i; row++)\n    {\n        for (col = 0; col < j; col++)\n        {\n            scanf(\"%d\", &a[row][col]);\n        }\n    }\n\n    // Transpose of matrix\n    for (row = 0; row < i; row++)\n    {\n        for (col = 0; col < j; col++)\n        {\n            b[col][row] = a[row][col];\n        }\n    }\n\n    // Check if matrix a equals to matrix b or not.\n    for (row = 0; row < i; row++)\n    {\n        for (col = 0; col < j; col++)\n        {\n            if (a[row][col] != b[row][col])\n            {\n                count++;\n                break;\n            }\n        }\n    }\n    if (count == 0)\n    {\n        printf(\"\\nThe given Matrix is a Symmetric Matrix \");\n    }\n    else\n    {\n        printf(\"\\nThe given Matrix is Not a Symmetric Matrix \");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter number of rows: 3\nEnter number of columns: 3\n\nEnter the Matrix Elements\n1 4 5\n4 3 2\n5 2 1\n\nThe given Matrix is a Symmetric Matrix\n\nRun 2:\nEnter number of rows: 2\nEnter number of columns: 2\n\nEnter the Matrix Elements\n2 1\n2 3\n\nThe given Matrix is Not a Symmetric Matrix"
+    },
+    {
+      "indNum": "8",
+      "queName": "Normal & Trance of a Matrix",
+      "code": "/* 1. Create a matrix and define all its elements.\n2. To evaluate normal of the matrix, take sum of all the elements of the array and calculate the square root of it.\n3. To evaluate trace of the matrix, take sum of the main diagonal elements. */\n\n\n#include <stdio.h>\n#include <math.h>\n\nvoid main()\n{\n\n    static int array[10][10];\n    int i, j, m, n, sum = 0, sum1 = 0, a = 0, normal;\n\n    printf(\"Enter number of rows: \");\n    scanf(\"%d\", &m);\n    printf(\"Enter number of columns: \");\n    scanf(\"%d\", &n);\n\n    printf(\"\\nEnter the n coefficients of the matrix \\n\");\n    for (i = 0; i < m; ++i)\n    {\n        for (j = 0; j < n; ++j)\n        {\n            scanf(\"%d\", &array[i][j]);\n            a = array[i][j] * array[i][j];\n            sum1 = sum1 + a;\n        }\n    }\n\n    normal = sqrt(sum1);\n    printf(\"\\nThe normal of the given matrix is = %d\\n\", normal);\n    for (i = 0; i < m; ++i)\n    {\n        sum = sum + array[i][i];\n    }\n\n    printf(\"\\nTrace of the matrix is = %d\\n\", sum);\n}",
+      "output": "Enter number of rows: 3\nEnter number of columns: 3\n\nEnter the coefficients of the matrix\n3  7 9\n2 6 10\n8 5 9\n\nThe normal of the given matrix is = 21\nTrace of the matrix is = 18"
+    },
+    {
+      "indNum": "9",
+      "queName": "Determinant of a Matrix",
+      "code": "#include <stdio.h>\n\nint main()\n{\n\n    int a[3][3], i, j;\n\n    long determinant;\n    printf(\"Enter the 9 elements of matrix: \");\n    for (i = 0; i < 3; i++)\n        for (j = 0; j < 3; j++)\n            scanf(\"%d\", &a[i][j]);\n\n    printf(\"\\nThe matrix is\\n\");\n    for (i = 0; i < 3; i++)\n    {\n        printf(\"\\n\");\n        for (j = 0; j < 3; j++)\n            printf(\"%d\\t\", a[i][j]);\n    }\n\n    determinant = a[0][0] * ((a[1][1] * a[2][2]) - (a[2][1] * a[1][2])) - a[0][1] * (a[1][0] * a[2][2] - a[2][0] * a[1][2]) + a[0][2] * (a[1][0] * a[2][1] - a[2][0] * a[1][1]);\n\n    printf(\"\\nDeterminant of 3X3 matrix: %ld\", determinant);\n\n    return 0;\n}",
+      "output": "Enter the 9 elements of matrix: 1 2 3 4 5 1 2 3 4\nThe matrix is\n \n1\t2\t3\t\n4\t5\t1\t\n2\t3\t4\t\nDeterminant of 3X3 matrix: -5"
+    },
+    {
+      "indNum": "10",
+      "queName": "Inverse of a Matrix",
+      "code": "#include <stdio.h>\n#include <math.h>\n\nfloat determinant(float[][25], float);\nvoid cofactor(float[][25], float);\nvoid transpose(float[][25], float[][25], float);\n\nint main()\n{\n    float a[25][25], k, d;\n    int i, j;\n    printf(\"Enter the order of the Matrix : \");\n    scanf(\"%f\", &k);\n    printf(\"Enter the elements of %.0fX%.0f Matrix : \\n\", k, k);\n    for (i = 0; i < k; i++)\n    {\n        for (j = 0; j < k; j++)\n        {\n            scanf(\"%f\", &a[i][j]);\n        }\n    }\n    d = determinant(a, k);\n    if (d == 0)\n        printf(\"\\nInverse of Entered Matrix is not possible\\n\");\n    else\n        cofactor(a, k);\n}\n\n/*For calculating Determinant of the Matrix */\nfloat determinant(float a[25][25], float k)\n{\n    float s = 1, det = 0, b[25][25];\n    int i, j, m, n, c;\n    if (k == 1)\n    {\n        return (a[0][0]);\n    }\n    else\n    {\n        det = 0;\n        for (c = 0; c < k; c++)\n        {\n            m = 0;\n            n = 0;\n            for (i = 0; i < k; i++)\n            {\n                for (j = 0; j < k; j++)\n                {\n                    b[i][j] = 0;\n                    if (i != 0 && j != c)\n                    {\n                        b[m][n] = a[i][j];\n                        if (n < (k - 2))\n                            n++;\n                        else\n                        {\n                            n = 0;\n                            m++;\n                        }\n                    }\n                }\n            }\n            det = det + s * (a[0][c] * determinant(b, k - 1));\n            s = -1 * s;\n        }\n    }\n\n    return (det);\n}\n\nvoid cofactor(float num[25][25], float f)\n{\n    float b[25][25], fac[25][25];\n    int p, q, m, n, i, j;\n    for (q = 0; q < f; q++)\n    {\n        for (p = 0; p < f; p++)\n        {\n            m = 0;\n            n = 0;\n            for (i = 0; i < f; i++)\n            {\n                for (j = 0; j < f; j++)\n                {\n                    if (i != q && j != p)\n                    {\n                        b[m][n] = num[i][j];\n                        if (n < (f - 2))\n                            n++;\n                        else\n                        {\n                            n = 0;\n                            m++;\n                        }\n                    }\n                }\n            }\n            fac[q][p] = pow(-1, q + p) * determinant(b, f - 1);\n        }\n    }\n    transpose(num, fac, f);\n}\n/*Finding transpose of matrix*/\nvoid transpose(float num[25][25], float fac[25][25], float r)\n{\n    int i, j;\n    float b[25][25], inverse[25][25], d;\n\n    for (i = 0; i < r; i++)\n    {\n        for (j = 0; j < r; j++)\n        {\n            b[i][j] = fac[j][i];\n        }\n    }\n    d = determinant(num, r);\n    for (i = 0; i < r; i++)\n    {\n        for (j = 0; j < r; j++)\n        {\n            inverse[i][j] = b[i][j] / d;\n        }\n    }\n    printf(\"\\n\\nThe inverse of matrix is : \\n\");\n\n    for (i = 0; i < r; i++)\n    {\n        for (j = 0; j < r; j++)\n        {\n            printf(\"%0.2f\\t\", inverse[i][j]);\n        }\n        printf(\"\\n\");\n    }\n}",
+      "output": "Enter the order of the Matrix : 2\nEnter the elements of 2X2 Matrix :\n1 2\n3 4\n\n\nThe inverse of matrix is :\n-2.00   1.00\n1.50    -0.50"
+    }
+  ],
+  "Sorting": [
+    {
+      "indNum": "1",
+      "queName": "Insert Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "2",
+      "queName": "Selection Sort",
+      "code": "",
+      "output": ""
+    },
+    {
+      "indNum": "3",
+      "queName": "Quick Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "4",
+      "queName": "Heap Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "5",
+      "queName": "Merge Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "6",
+      "queName": "Bubble Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "7",
+      "queName": "Radix Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "8",
+      "queName": "Sell Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "9",
+      "queName": "Bucket Sort",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    }
+  ],
+  "Searching": [
+    {
+      "indNum": "1",
+      "queName": "Linear Search",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "2",
+      "queName": "Binary Search",
+      "code": "#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()",
+      "output": "Hello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!"
+    }
+  ],
+  "Array": [
+    {
+      "indNum": "1",
+      "queName": "Array Demo 1",
+      "code": "#include <stdio.h>\n\nint main()\n{\n\n    // array initialization using initializer list\n    int arr[5] = {10, 20, 30, 40, 50};\n    int i;\n\n    printf(\"Content of the array: \\n\\n\");\n\n    /* 1. array initialization using for loop\n       2. inial value of the i is 0 as the array indexing always start from zero */\n\n    for (i = 0; i < 5; i++)\n    {\n        printf(\"Value at arr[%d]: %d\\n\", i, arr[i]);\n    }\n    return 0;\n}\n",
+      "output": "Content of the array:\n\nValue at arr[0]: 10\nValue at arr[1]: 20\nValue at arr[2]: 30\nValue at arr[3]: 40\nValue at arr[4]: 50"
+    },
+    {
+      "indNum": "2",
+      "queName": "Array Demo 2 (Taking input from user)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 1000 // Maximum array size\n\nint main()\n{\n    int arr[MAX_SIZE]; // Declare an array of MAX_SIZE\n    int i, N;\n\n    /* Input array size */\n    printf(\"Enter size of array: \");\n    scanf(\"%d\", &N);\n\n    /* Input elements in array */\n    printf(\"\\nEnter %d elements in the array : \\n\", N);\n    for (i = 0; i < N; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    /*\n     * Print all elements of array\n     */\n    printf(\"\\nElements in array are: \");\n    for (i = 0; i < N; i++)\n    {\n        printf(\"%d, \", arr[i]);\n    }\n\n    return 0;\n}",
+      "output": "Enter size of array: 5\n\nEnter 5 elements in the array :\n1\n2\n3\n4\n5\n\nElements in array are: 1, 2, 3, 4, 5,"
+    },
+    {
+      "indNum": "3",
+      "queName": "sum of all array elements",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int i, n, sum = 0;\n\n    /* Input size of the array */\n    printf(\"Enter size of the array: \");\n    scanf(\"%d\", &n);\n\n    /* Input elements in array */\n    printf(\"\\nEnter %d elements in the array: \\n\", n);\n    for (i = 0; i < n; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    /*\n     * Add each array element to sum\n     */\n    for (i = 0; i < n; i++)\n    {\n        sum = sum + arr[i];\n    }\n\n    printf(\"\\nSum of all elements of array = %d\", sum);\n\n    return 0;\n}\n",
+      "output": "Enter size of the array: 5\n\nEnter 5 elements in the array:\n2\n4\n5\n6\n1\n\nSum of all elements of array = 18"
+    },
+    {
+      "indNum": "4",
+      "queName": "MinMax in an Array",
+      "code": "#include <stdio.h>\n\n#define MAX_SIZE 100 // Maximum array size\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int i, max, min, size;\n\n    /* Input size of the array */\n    printf(\"Enter size of the array: \");\n    scanf(\"%d\", &size);\n\n    /* Input array elements */\n    printf(\"\\nEnter %d elements in the array:\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    /* Assume first element as maximum and minimum */\n    max = arr[0];\n    min = arr[0];\n\n    /*\n     * Find maximum and minimum in all array elements.\n     */\n    for (i = 1; i < size; i++)\n    {\n        /* If current element is greater than max */\n        if (arr[i] > max)\n        {\n            max = arr[i];\n        }\n\n        /* If current element is smaller than min */\n        if (arr[i] < min)\n        {\n            min = arr[i];\n        }\n    }\n\n    /* Print maximum and minimum element */\n    printf(\"\\nMaximum element = %d\\n\", max);\n    printf(\"Minimum element = %d\", min);\n\n    return 0;\n}",
+      "output": "Enter size of the array: 5\n\nEnter 5 elements in the array:\n3\n56\n3\n32\n1\n\nMaximum element = 56\nMinimum element = 1"
+    },
+    {
+      "indNum": "5",
+      "queName": "Print array in reverse order",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int size, i;\n\n    /* Input size of array */\n    printf(\"Enter size of the array: \");\n    scanf(\"%d\", &size);\n\n    /* Input array elements */\n    printf(\"\\nEnter %d elements in array: \", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    /*\n     * Print array in reversed order\n     */\n    printf(\"\\nArray in reverse order: \");\n    for (i = size - 1; i >= 0; i--)\n    {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+      "output": "Enter size of the array: 5\n\nEnter 5 elements in array: 2 3 4 5 6\n\nArray in reverse order: 6 5 4 3 2"
+    },
+    {
+      "indNum": "6",
+      "queName": "copy all elements of array to another",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int source[MAX_SIZE], dest[MAX_SIZE];\n    int i, size;\n\n    printf(\"Enter the size of the array : \");\n    scanf(\"%d\", &size);\n\n    printf(\"\\nEnter %d elements of source array:\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &source[i]);\n    }\n\n    for (i = 0; i < size; i++)\n    {\n        dest[i] = source[i];\n    }\n\n    printf(\"\\nElements of source array are : \");\n    for (i = 0; i < size; i++)\n    {\n        printf(\"%d \", source[i]);\n    }\n\n    printf(\"\\nElements of dest array are : \");\n    for (i = 0; i < size; i++)\n    {\n        printf(\"%d \", dest[i]);\n    }\n\n    return 0;\n}",
+      "output": "Enter the size of the array : 5\n\nEnter 5 elements of source array:\n43\n56\n98\n5\n34\n\nElements of source array are : 43 56 98 5 34\nElements of dest array are : 43 56 98 5 34"
+    },
+    {
+      "indNum": "7",
+      "queName": "Search element in an array",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100 // Maximum array size\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int size, i, toSearch, found;\n\n    /* Input size of array */\n    printf(\"Enter size of array: \");\n    scanf(\"%d\", &size);\n\n    /* Input elements of array */\n    printf(\"\\nEnter elements in array:\\n\");\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    printf(\"\\nEnter element to search: \");\n    scanf(\"%d\", &toSearch);\n\n    /* Assume that element does not exists in array */\n    found = 0;\n\n    for (i = 0; i < size; i++)\n    {\n        /*\n         * If element is found in array then raise found flag\n         * and terminate from loop.\n         */\n        if (arr[i] == toSearch)\n        {\n            found = 1;\n            break;\n        }\n    }\n\n    /*\n     * If element is not found in array\n     */\n    if (found == 1)\n    {\n        printf(\"\\n%d is found at position %d\", toSearch, i + 1);\n    }\n    else\n    {\n        printf(\"\\n%d is not found in the array\", toSearch);\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter size of array: 5\n\nEnter elements in array:\n10\n20\n54\n65\n34\n\nEnter element to search: 65\n\n65 is found at position 4\n\nEnter size of array: 5\n\nEnter elements in array:\n54\n345\n45\n32\n54\n\nEnter element to search: 87\n\n87 is not found in the array"
+    },
+    {
+      "indNum": "8",
+      "queName": "Array Sorting (Ascending Order)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int size;\n    int i, j, temp;\n\n    printf(\"Enter size of array: \");\n    scanf(\"%d\", &size);\n\n    printf(\"\\nEnter %d elements in array:\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    for (i = 0; i < size; i++)\n    {\n        /*\n         * Place currently selected element array[i]\n         * to its correct place.\n         */\n        for (j = i + 1; j < size; j++)\n        {\n            /*\n             * Swap if currently selected array element\n             * is not at its correct position.\n             */\n            if (arr[i] > arr[j])\n            {\n                temp = arr[i];\n                arr[i] = arr[j];\n                arr[j] = temp;\n            }\n        }\n    }\n\n    /* Print the sorted array */\n    printf(\"\\nElements of array in ascending order: \");\n    for (i = 0; i < size; i++)\n    {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+      "output": "Enter size of array: 5\n\nEnter 5 elements in array:\n56\n67\n54\n34\n23\n\nElements of array in ascending order: 23 34 54 56 67"
+    },
+    {
+      "indNum": "9",
+      "queName": "Array Sorting (Descending Order)",
+      "code": "#include <stdio.h>\n\nvoid main()\n{\n\n    int number[30];\n\n    int i, j, a, n;\n    printf(\"Enter the value of N\\n\");\n    scanf(\"%d\", &n);\n\n    printf(\"Enter the numbers \\n\");\n    for (i = 0; i < n; ++i)\n        scanf(\"%d\", &number[i]);\n\n    for (i = 0; i < n; ++i)\n    {\n        for (j = i + 1; j < n; ++j)\n        {\n            if (number[i] < number[j])\n            {\n                a = number[i];\n                number[i] = number[j];\n                number[j] = a;\n            }\n        }\n    }\n\n    printf(\"The numbers arranged in descending order are given below\\n\");\n\n    for (i = 0; i < n; ++i)\n    {\n        printf(\"%d\\n\", number[i]);\n    }\n}",
+      "output": "Enter the value of N\n5\nEnter the numbers\n1\n2\n6\n7\n8\nThe numbers arranged in descending order are given below\n8\n7\n6\n2\n1"
+    },
+    {
+      "indNum": "10",
+      "queName": "Remove Duplicate elements in the Array",
+      "code": "\n#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int size;\n    int i, j, k;\n\n    printf(\"Enter size of the array : \");\n    scanf(\"%d\", &size);\n\n    printf(\"\\nEnter %d elements in array :\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    /*\n     * Find duplicate elements in array\n     */\n    for (i = 0; i < size; i++)\n    {\n        for (j = i + 1; j < size; j++)\n        {\n            /* If any duplicate found */\n            if (arr[i] == arr[j])\n            {\n                /* Delete the current duplicate element */\n                for (k = j; k < size - 1; k++)\n                {\n                    arr[k] = arr[k + 1];\n                }\n                size--;\n                j--;\n            }\n        }\n    }\n\n    /*\n     * Print array after deleting duplicate elements\n     */\n    printf(\"\\nArray elements after deleting duplicates : \");\n    for (i = 0; i < size; i++)\n    {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+      "output": "Enter size of the array : 10\n\nEnter 10 elements in array :\n10\n20\n10\n30\n20\n40\n50\n30\n40\n50\n\nArray elements after deleting duplicates : 10 20 30 40 50"
+    },
+    {
+      "indNum": "11",
+      "queName": "Delete Array element (by position)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int i, size, pos;\n\n    printf(\"Enter size of the array : \");\n    scanf(\"%d\", &size);\n\n    printf(\"\\nEnter %d elements in array :\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    printf(\"Enter the element position to delete : \");\n    scanf(\"%d\", &pos);\n\n    if (pos < 0 || pos > size)\n    {\n        printf(\"Invalid position! Please enter position between 1 to %d\", size);\n    }\n    else\n    {\n        for (i = pos - 1; i < size - 1; i++)\n        {\n            arr[i] = arr[i + 1];\n        }\n        size--;\n\n        printf(\"\\nElements of array after delete are : \");\n        for (i = 0; i < size; i++)\n        {\n            printf(\"%d \", arr[i]);\n        }\n    }\n\n    return 0;\n}",
+      "output": "Enter size of the array : 5\n\nEnter 5 elements in array :\n4\n5\n6\n3\n67\nEnter the element position to delete : 4\n\nElements of array after delete are : 4 5 6 67"
+    },
+    {
+      "indNum": "12",
+      "queName": "Insert an element in the Array",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int i, size, num, pos;\n\n    printf(\"Enter size of the array : \");\n    scanf(\"%d\", &size);\n\n    printf(\"\\nEnter %d elements in array :\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    printf(\"Enter element to insert : \");\n    scanf(\"%d\", &num);\n    printf(\"Enter the element position : \");\n    scanf(\"%d\", &pos);\n\n    if (pos > size + 1 || pos <= 0)\n    {\n        printf(\"Invalid position! Please enter position between 1 to %d\", size);\n    }\n    else\n    {\n        for (i = size; i >= pos; i--)\n        {\n            arr[i] = arr[i - 1];\n        }\n\n        /* Insert new element at given position and increment size */\n        arr[pos - 1] = num;\n        size++;\n\n        /* Print array after insert operation */\n        printf(\"Array elements after insertion : \");\n        for (i = 0; i < size; i++)\n        {\n            printf(\"%d \", arr[i]);\n        }\n    }\n\n    return 0;\n}",
+      "output": "Enter size of the array : 5\n\nEnter 5 elements in array :\n1\n2\n3\n5\n6\nEnter element to insert : 4\nEnter the element position : 3\nArray elements after insertion : 1 2 4 3 5 6"
+    },
+    {
+      "indNum": "13",
+      "queName": "Count total number of duplicate element in an array",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int i, j, size, count = 0;\n\n    printf(\"Enter size of the array : \");\n    scanf(\"%d\", &size);\n\n    printf(\"\\nEnter %d elements in array :\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    /*\n     * Find all duplicate elements in array\n     */\n    for (i = 0; i < size; i++)\n    {\n        for (j = i + 1; j < size; j++)\n        {\n            /* If duplicate found then increment count by 1 */\n            if (arr[i] == arr[j])\n            {\n                count++;\n                break;\n            }\n        }\n    }\n\n    printf(\"\\nTotal number of duplicate elements found in array = %d\", count);\n\n    return 0;\n}",
+      "output": "Enter size of the array : 5\n\nEnter 5 elements in array :\n4\n5\n4\n3\n2\n\nTotal number of duplicate elements found in array = 1"
+    },
+    {
+      "indNum": "14",
+      "queName": "Count total Even-Odd numbers in Array",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    int arr[MAX_SIZE];\n    int i, size, even, odd;\n\n    printf(\"Enter size of the array: \");\n    scanf(\"%d\", &size);\n\n    printf(\"\\nEnter %d elements in array:\\n\", size);\n    for (i = 0; i < size; i++)\n    {\n        scanf(\"%d\", &arr[i]);\n    }\n    even = 0;\n    odd = 0;\n\n    for (i = 0; i < size; i++)\n    {\n        if (arr[i] % 2 == 0)\n        {\n            even++;\n        }\n        else\n        {\n            odd++;\n        }\n    }\n\n    printf(\"Total even elements: %d\\n\", even);\n    printf(\"Total odd elements: %d\", odd);\n\n    return 0;\n}",
+      "output": "Enter size of the array: 5\n\nEnter 5 elements in array:\n1\n2\n3\n4\n5\nTotal even elements: 2\nTotal odd elements: 3"
+    }
+  ],
+  "String": [
+    {
+      "indNum": "1",
+      "queName": "String Demo",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    char str[] = {'H', 'E', 'L', 'L', 'O', '\\0'};\n    char str1[] = \"Hello World!\";\n\n\tprintf(\"Char Array Value is: %s\\n\", str);\n    printf(\"String Literal Value is: %s \", str1);\n    return 0;\n}",
+      "output": "Char Array Value is: HELLO\nString Literal Value is: Hello World!"
+    },
+    {
+      "indNum": "2",
+      "queName": "Copy one String to another String (using Strcpy)",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char text1[MAX_SIZE], text2[MAX_SIZE];\n\n    printf(\"Enter any string: \");\n    gets(text1);\n\n    strcpy(text2, text1);\n\n    printf(\"First string = %s\\n\", text1);\n    printf(\"Second string = %s\\n\", text2);\n\n    return 0;\n}",
+      "output": "Enter any string: Hello\nFirst string = Hello\nSecond string = Hello"
+    },
+    {
+      "indNum": "3",
+      "queName": "Copy one String to another String (without using Strcpy function)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char text1[MAX_SIZE];\n    char text2[MAX_SIZE];\n    int i;\n\n    printf(\"Enter any string: \");\n    gets(text1);\n\n    for (i = 0; text1[i] != '\\0'; i++)\n    {\n        text2[i] = text1[i];\n    }\n\n    text2[i] = '\\0';\n\n    printf(\"First string = %s\\n\", text1);\n    printf(\"Second string = %s\\n\", text2);\n    printf(\"Total characters copied = %d\\n\", i);\n\n    return 0;\n}",
+      "output": "Enter any string: Hello\nFirst string = Hello\nSecond string = Hello\nTotal characters copied = 5"
+    },
+    {
+      "indNum": "4",
+      "queName": "Compare two String (using Strcmp)",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str1[MAX_SIZE], str2[MAX_SIZE];\n    int res;\n\n    printf(\"Enter first string: \");\n    gets(str1);\n    printf(\"Enter second string: \");\n    gets(str2);\n\n    res = strcmp(str1, str2);\n\n    if (res == 0)\n    {\n        printf(\"Both strings are equal.\");\n    }\n    else if (res == -1)\n    {\n        printf(\"First string is lexicographically smaller than second.\");\n    }\n    else\n    {\n        printf(\"First string is lexicographically greater than second.\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter first string: hello\nEnter second string: hello\nBoth strings are equal.\n\nRun 2:\nEnter first string: Hello\nEnter second string: Helo\nFirst string is lexicographically smaller than second."
+    },
+    {
+      "indNum": "5",
+      "queName": "Compare two String (without using Strcmp Function)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\nint compare(char *str1, char *str2);\n\nint main()\n{\n    char str1[MAX_SIZE], str2[MAX_SIZE];\n    int res;\n\n    printf(\"Enter first string: \");\n    gets(str1);\n    printf(\"Enter second string: \");\n    gets(str2);\n\n    res = compare(str1, str2);\n\n    if (res == 0)\n    {\n        printf(\"Both strings are equal.\");\n    }\n    else if (res < 0)\n    {\n        printf(\"First string is lexicographically smaller than second.\");\n    }\n    else\n    {\n        printf(\"First string is lexicographically greater than second.\");\n    }\n\n    return 0;\n}\n\nint compare(char *str1, char *str2)\n{\n    int i = 0;\n\n    /* Iterate till both strings are equal */\n    while (str1[i] == str2[i])\n    {\n        if (str1[i] == '\\0' && str2[i] == '\\0')\n            break;\n\n        i++;\n    }\n\n    // Return the difference of current characters.\n    return str1[i] - str2[i];\n}",
+      "output": "Run 1:\nEnter first string: hello\nEnter second string: hello\nBoth strings are equal.\n\nRun 2:\nEnter first string: hello\nEnter second string: helo\nFirst string is lexicographically smaller than second."
+    },
+    {
+      "indNum": "6",
+      "queName": "Concatenate two String (using Strcat)",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str1[MAX_SIZE], str2[MAX_SIZE];\n\n    printf(\"Enter first string: \");\n    gets(str1);\n    printf(\"Enter second string: \");\n    gets(str2);\n\n    strcat(str1, str2);\n\n    printf(\"Concatenated string = %s\", str1);\n\n    return 0;\n}",
+      "output": "Enter first string: Hello \nEnter second string: World!\nConcatenated string = Hello World!"
+    },
+    {
+      "indNum": "7",
+      "queName": "Concatenate two String (without using Strcat func.)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100 \n\nint main()\n{\n    char str1[MAX_SIZE], str2[MAX_SIZE];\n    int i, j;\n\n    printf(\"Enter first string: \");\n    gets(str1);\n    printf(\"Enter second string: \");\n    gets(str2);\n\n    /* Move till the end of str1 */\n    i=-1;\n    while(str1[++i]);\n\n    /* Copy str2 to str1 */\n    j = 0;\n    while(str1[i++] = str2[j++]);\n\n    printf(\"Concatenated string = %s\", str1);\n\n    return 0;\n}",
+      "output": "Enter first string: Hello \nEnter second string: World!\nConcatenated string = Hello World!"
+    },
+    {
+      "indNum": "8",
+      "queName": "Length of a String (using Strlen)",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char text[MAX_SIZE];\n    int length;\n\n    printf(\"Enter any string: \");\n    gets(text);\n\n    length = strlen(text);\n\n    printf(\"Length of '%s' = %d\", text, length);\n\n    return 0;\n}",
+      "output": "Enter any string: I love programming.\nLength of 'I love programming.' = 19"
+    },
+    {
+      "indNum": "9",
+      "queName": "Length of a String (without using Strlen func.)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char text[MAX_SIZE];\n    int i;\n    int count = 0;\n\n    printf(\"Enter any string: \");\n    gets(text);\n\n    for (i = 0; text[i] != '\\0'; i++)\n    {\n        count++;\n    }\n\n    printf(\"Length of '%s' = %d\", text, count);\n\n    return 0;\n}",
+      "output": "Enter any string: I love programming.\nLength of 'I love programming.' = 19"
+    },
+    {
+      "indNum": "10",
+      "queName": "Reverse of a String (using Strrev)",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE];\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n    printf(\"Original string = %s\\n\", str);\n\n    strrev(str);\n\n    printf(\"Reverse string = %s\", str);\n\n    return 0;\n}",
+      "output": "Enter any string: love\nOriginal string = love\nReverse string = evol"
+    },
+    {
+      "indNum": "11",
+      "queName": "Reverse of a String (without using Strrev func.)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE], reverse[MAX_SIZE];\n    int i, strIndex, revIndex, len;\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n    i = 0;\n    while (str[i] != '\\0')\n        i++;\n\n    len = i;\n\n    revIndex = 0;\n    strIndex = len - 1;\n    while (strIndex >= 0)\n    {\n        reverse[revIndex] = str[strIndex];\n\n        strIndex--;\n        revIndex++;\n    }\n    reverse[revIndex] = '\\0';\n\n    printf(\"\\nOriginal string = %s\\n\", str);\n    printf(\"Reverse string = %s\", reverse);\n\n    return 0;\n}",
+      "output": "Original string = hello\nReverse string = olleh"
+    },
+    {
+      "indNum": "12",
+      "queName": "Convert lowercase String to uppercase (without using Strlwr)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE];\n    int i;\n\n    printf(\"Enter your text : \");\n    gets(str);\n\n    for (i = 0; str[i] != '\\0'; i++)\n    {\n        if (str[i] >= 'a' && str[i] <= 'z')\n        {\n            str[i] = str[i] - 32;\n        }\n    }\n\n    printf(\"Uppercase string : %s\", str);\n    return 0;\n}",
+      "output": "Enter your text : lower\nUppercase string : LOWER"
+    },
+    {
+      "indNum": "13",
+      "queName": "Convert lowercase String to uppercase (using Strlwr)",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE];\n\n    printf(\"Enter your text : \");\n    gets(str);\n\n    strupr(str);\n\n    printf(\"Uppercase string : %s\", str);\n\n    return 0;\n}",
+      "output": "Enter your text : lower\nUppercase string : LOWER"
+    },
+    {
+      "indNum": "14",
+      "queName": "Convert uppercase String to lowercase (without using Strupr)",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE];\n    int i;\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n    for (i = 0; str[i] != '\\0'; i++)\n    {\n        if (str[i] >= 'A' && str[i] <= 'Z')\n        {\n            str[i] = str[i] + 32;\n        }\n    }\n\n    printf(\"Lower case string: %s\", str);\n\n    return 0;\n}",
+      "output": "Enter any string: HELLO\nLower case string: hello"
+    },
+    {
+      "indNum": "15",
+      "queName": "Convert uppercase String to lowercase (using Strupr)",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE];\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n    strlwr(str);\n\n    printf(\"Lowercase string: %s\", str);\n\n    return 0;\n}",
+      "output": "Enter any string: HELLO\nLower case string: hello"
+    },
+    {
+      "indNum": "16",
+      "queName": "Count total number of vowel and consonant in a String",
+      "code": "#include <stdio.h>\n#include <string.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE];\n    int i, len, vowel, consonant;\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n    vowel = 0;\n    consonant = 0;\n    len = strlen(str);\n\n    for (i = 0; i < len; i++)\n    {\n        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))\n        {\n            if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||\n                str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')\n                vowel++;\n            else\n                consonant++;\n        }\n    }\n\n    printf(\"Total number of vowel = %d\\n\", vowel);\n    printf(\"Total number of consonant = %d\\n\", consonant);\n\n    return 0;\n}",
+      "output": "Enter any string: i love programming.\nTotal number of vowel = 6\nTotal number of consonant = 10\n"
+    },
+    {
+      "indNum": "17",
+      "queName": "Check if the String is palindrome or not",
+      "code": "/**\n * C program to check whether a string is palindrome or not using string functions\n */\n\n#include <stdio.h>\n#include <string.h>\n\n#define MAX_SIZE 100 // Maximum string size\n\nint main()\n{\n    char str[MAX_SIZE], reverse[MAX_SIZE];\n    int flag;\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n\n    strcpy(reverse, str);\n    strrev(reverse);\n\n    flag = strcmp(str, reverse);\n\n    if(flag == 0)\n    {\n        printf(\"String is Palindrome.\");\n    }\n    else\n    {\n        printf(\"String is Not Palindrome.\");\n    }\n\n    return 0;\n}\n\n\n/**\n * C program to check whether a string is palindrome or not\n */\n\n#include <stdio.h>\n#define MAX_SIZE 100 \nint main()\n{\n    char str[MAX_SIZE];\n    int len, startIndex, endIndex;\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n    len = 0;\n    while(str[len] != '\\0') len++;\n\n    startIndex = 0;\n    endIndex   = len-1;\n    \n\n    while(startIndex <= endIndex)\n    {\n        if(str[startIndex] != str[endIndex])\n            break;\n\n        startIndex++;\n        endIndex--;\n    }\n\n    if(startIndex >= endIndex)\n    {\n        printf(\"String is Palindrome.\");\n    }\n    else\n    {\n        printf(\"String is Not Palindrome.\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter any string: hello\nString is Not Palindrome.\n\nRun 2:\nEnter any string: madam\nString is Palindrome."
+    },
+    {
+      "indNum": "18",
+      "queName": "Toggle case of each character in a String",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nvoid toggleCase(char *str);\n\nint main()\n{\n    char str[MAX_SIZE];\n\n    printf(\"Enter any string: \");\n    gets(str);\n\n    printf(\"\\nString before toggling case: %s\", str);\n\n    toggleCase(str);\n\n    printf(\"\\nString after toggling case: %s\", str);\n\n    return 0;\n}\n\nvoid toggleCase(char *str)\n{\n    int i = 0;\n\n    while (str[i] != '\\0')\n    {\n        if (str[i] >= 'a' && str[i] <= 'z')\n        {\n            str[i] = str[i] - 32;\n        }\n        else if (str[i] >= 'A' && str[i] <= 'Z')\n        {\n            str[i] = str[i] + 32;\n        }\n\n        i++;\n    }\n}",
+      "output": "Enter any string: Hello World\n\nString before toggling case: Hello World\nString after toggling case: hELLO wORLD"
+    },
+    {
+      "indNum": "19",
+      "queName": "Find total alphabets, digits or special character in a String",
+      "code": "#include <stdio.h>\n#define MAX_SIZE 100\n\nint main()\n{\n    char str[MAX_SIZE];\n    int alphabets, digits, others, i;\n\n    alphabets = digits = others = i = 0;\n\n    printf(\"Enter any string : \");\n    gets(str);\n\n    while (str[i] != '\\0')\n    {\n        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))\n        {\n            alphabets++;\n        }\n        else if (str[i] >= '0' && str[i] <= '9')\n        {\n            digits++;\n        }\n        else\n        {\n            others++;\n        }\n\n        i++;\n    }\n\n    printf(\"Alphabets = %d\\n\", alphabets);\n    printf(\"Digits = %d\\n\", digits);\n    printf(\"Special characters = %d\", others);\n\n    return 0;\n}",
+      "output": "Enter any string : adjk789923 %^&562)_)\nAlphabets = 4\nDigits = 9\nSpecial characters = 7"
+    }
+  ],
+  "Function": [
+    {
+      "indNum": "1",
+      "queName": "Function Example",
+      "code": "#include <stdio.h>\n\nvoid function();\nint main()\n{\n    function();\n\n    return 0;\n}\nvoid function()\n{\n    printf(\"It is The Programming.\");\n}\n",
+      "output": "It is The Programming."
+    },
+    {
+      "indNum": "2",
+      "queName": "Function Calling Example",
+      "code": "#include <stdio.h>\n\nvoid funA();\nvoid funB();\nvoid funC();\nvoid main()\n{\n    printf(\"Functions Call: \\n\");\n    funA();\n}\nvoid funA()\n{\n    printf(\"Fun A\\n\");\n    funB();\n}\nvoid funB()\n{\n    printf(\"Fun B\\n\");\n    funC();\n}\nvoid funC()\n{\n    printf(\"Fun C\\n\");\n}\n",
+      "output": "Functions Call:\nFun A\nFun B\nFun C\n"
+    },
+    {
+      "indNum": "3",
+      "queName": "Return Example",
+      "code": "#include<stdio.h>\nint fun()\n{\n\tprintf(\"Hey from fun()\\n\");\n\treturn 1; //control transferred back to the main.\n\tprintf(\"Bye from fun()\\n\"); //this statement never get executed because program's control returns from the above statement.\n}\nvoid main()\n{\n\tprintf(\"Hey from main()\\n\");\n\tfun();\n\tprintf(\"Bye from main()\\n\");\n}\n\n\n",
+      "output": "Hey from main()\nHey from fun()\nBye from main()\n"
+    },
+    {
+      "indNum": "4",
+      "queName": "Function with argument and return type",
+      "code": "#include <stdio.h>\n\nint fun(int);\nvoid main()\n{\n    int n, ans;\n    printf(\"Enter The Value of N:>>\");\n    scanf(\"%d\", &n);\n    ans = fun(n);\n    printf(\"The Square is :>>%d\", ans);\n}\nint fun(int i)\n{\n    return (i * i);\n}\n",
+      "output": "Enter The Value of N:>>5\nThe Square is :>>25"
+    },
+    {
+      "indNum": "5",
+      "queName": "Function with no argument and no return type",
+      "code": "#include <stdio.h>\n\nvoid fun(void);\nvoid main()\n{\n    fun(); // calling fun()\n}\nvoid fun(void)\n{\n    printf(\"I'am a function with No argument & No return type\");\n}\n",
+      "output": "I'm a function with No argument & No return type"
+    },
+    {
+      "indNum": "6",
+      "queName": "Function with argument and no return type",
+      "code": "#include <stdio.h>\n\nint fun(int);\nvoid main()\n{\n    fun(100);\n}\nint fun(int i)\n{\n    printf(\"I'am a function with argument & No return type\\n\");\n    printf(\"The argument supplied by the main() is: %d\", i);\n}\n",
+      "output": "I'm a function with argument & No return type\nThe argument supplied by the main() is: 100"
+    },
+    {
+      "indNum": "7",
+      "queName": "Function with no argument and return type",
+      "code": "#include <stdio.h>\n\nint fun();\nvoid main()\n{\n\tint value = fun();\n\tprintf(\"The value is returned by the fun() to the main() is: %d\", value);\n}\nint fun()\n{\n\tint n;\n\tprintf(\"enter a number: \");\n\tscanf(\"%d\", &n);\n\t\n\treturn n;\n}\n",
+      "output": "enter a number: 20\nThe value is returned by the fun() to the main() is: 20"
+    },
+    {
+      "indNum": "8",
+      "queName": "Call by Value",
+      "code": "#include <stdio.h>\n\nvoid cube(int);\n\nint main()\n{\n    int a = 2;\n\n    cube(a);\n\n    printf(\"a = %d\\n\", a);\n\n    return 0;\n}\n\nvoid cube(int x)\n{\n    x = x * x * x;\n    printf(\"x = %d\\n\", x);\n}\n",
+      "output": "x = 8\na = 2\n"
+    },
+    {
+      "indNum": "9",
+      "queName": "Call by Reference",
+      "code": "#include <stdio.h> \n \nvoid cube( int* );\nint  main() \n{ \n\tint a = 10;\n\n\tcube( &a );\n\n\tprintf( \"a = %d\\n\", a );\n\n\treturn 0;\n}\n\nvoid cube( int *pa )\n{\n\t*pa = (*pa) * (*pa) * (*pa);\n\tprintf( \"*pa = %d\\n\", *pa );\n}\n",
+      "output": "*pa = 1000\na = 1000\n"
+    },
+    {
+      "indNum": "10",
+      "queName": "Array as an argument",
+      "code": "/*Read an array and find out max.*/\n\n#include <stdio.h>\n\nint max(int[], int);\nvoid main()\n{\n    int a[5], m, i;\n    printf(\"Enter 5 integers:\\n\");\n    for (i = 0; i < 5; i++)\n        scanf(\"%d\", &a[i]);\n    m = max(a, 5);\n    printf(\"\\nMax is %d\", m);\n}\nint max(int a[], int n)\n{\n    int m = 0, i;\n    for (i = 0; i < n; i++)\n    {\n        if (a[i] > m)\n            m = a[i];\n    }\n    return (m);\n}",
+      "output": "Enter 5 integers:\n5\n6\n3\n8\n3\n\nMax is 8"
+    },
+    {
+      "indNum": "11",
+      "queName": "Sum of 1 to n Numbers using Function",
+      "code": "#include <stdio.h>\n\nint sumFun(int start, int end);\nint main()\n{\n    int start = 1, end, sum;\n\n    printf(\"Enter the number of N: \");\n    scanf(\"%d\", &end);\n\n    sum = sumFun(start, end);\n\n    printf(\"Sum of natural numbers from %d to %d = %d\", start, end, sum);\n\n    return 0;\n}\n\nint sumFun(int start, int end)\n{\n    if (start == end)\n        return start;\n    else\n        return start + sumFun(start + 1, end);\n}",
+      "output": "Enter the number of N: 5\nSum of natural numbers from 1 to 5 = 15"
+    },
+    {
+      "indNum": "12",
+      "queName": "Find factorial of a number using Function",
+      "code": "#include <stdio.h>\n\nlong long fact(int num);\nint main()\n{\n    int num;\n    long long factorial;\n\n    printf(\"Enter any number: \");\n    scanf(\"%d\", &num);\n\n    factorial = fact(num);\n\n    printf(\"Factorial of %d is %llu\", num, factorial);\n\n    return 0;\n}\n\nlong long fact(int num)\n{\n    if (num == 0)\n        return 1;\n    else\n        return num * fact(num - 1);\n}",
+      "output": "Enter any number: 5\nFactorial of 5 is 120"
+    },
+    {
+      "indNum": "13",
+      "queName": "Find MinMax between two num. using Function",
+      "code": "#include <stdio.h>\n\nint max(int num1, int num2);\nint min(int num1, int num2);\n\nint main()\n{\n    int num1, num2, maximum, minimum;\n\n    printf(\"Enter any two numbers: \");\n    scanf(\"%d%d\", &num1, &num2);\n\n    maximum = max(num1, num2); // Call maximum function\n    minimum = min(num1, num2); // Call minimum function\n\n    printf(\"\\nMaximum = %d\\n\", maximum);\n    printf(\"Minimum = %d\", minimum);\n\n    return 0;\n}\n\nint max(int num1, int num2)\n{\n    return (num1 > num2) ? num1 : num2;\n}\n\nint min(int num1, int num2)\n{\n    return (num1 > num2) ? num2 : num1;\n}",
+      "output": "Enter any two numbers: 5\n10\n\nMaximum = 10\nMinimum = 5"
+    },
+    {
+      "indNum": "14",
+      "queName": "check even or odd using Function",
+      "code": "#include <stdio.h>\n\nint isEven(int num)\n{\n    return !(num & 1);\n}\n\nint main()\n{\n    int num;\n\n    printf(\"Enter any number: \");\n    scanf(\"%d\", &num);\n\n    if (isEven(num))\n    {\n        printf(\"The number is even.\");\n    }\n    else\n    {\n        printf(\"The number is odd.\");\n    }\n\n    return 0;\n}",
+      "output": "Run 1:\nEnter any number: 6\nThe number is even.\n\nRun 2:\nEnter any number: 9\nThe number is odd."
+    },
+    {
+      "indNum": "15",
+      "queName": "Find power of a number using Function",
+      "code": "#include <stdio.h>\n\ndouble pow(double base, int expo);\n\nint main()\n{\n    double base, power;\n    int expo;\n\n    printf(\"Enter base: \");\n    scanf(\"%lf\", &base);\n    printf(\"Enter exponent: \");\n    scanf(\"%d\", &expo);\n\n    power = pow(base, expo);\n\n    printf(\"%.2lf ^ %d = %0.2f\", base, expo, power);\n\n    return 0;\n}\n\ndouble pow(double base, int expo)\n{\n    if (expo == 0)\n        return 1;\n    else if (expo > 0)\n        return base * pow(base, expo - 1);\n    else\n        return 1 / pow(base, -expo);\n}",
+      "output": "Enter base: 5\nEnter exponent: 3\n5.00 ^ 3 = 125.00"
+    }
+  ],
+  "Operator": [
+    {
+      "indNum": "1",
+      "queName": "Arithmetic Operator (+, -, *, /, %)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int a = 10, b = 4, res;\n\n    // printing a and b\n    printf(\"a is %d and b is %d\\n\", a, b);\n\n    res = a + b; // addition\n    printf(\"a + b is %d\\n\", res);\n\n    res = a - b; // subtraction\n    printf(\"a - b is %d\\n\", res);\n\n    res = a * b; // multiplication\n    printf(\"a * b is %d\\n\", res);\n\n    res = a / b; // division\n    printf(\"a / b is %d\\n\", res);\n\n    res = a % b; // modulus\n    printf(\"a %% b is %d\\n\", res);\n\n    return 0;\n}",
+      "output": "a is 10 and b is 4\na + b is 14\na - b is 6\na * b is 40\na / b is 2\na % b is 2"
+    },
+    {
+      "indNum": "2",
+      "queName": "Relational Operator (<, <=, >, >=, ==, !=)",
+      "code": "#include <stdio.h>\n \nint main()\n{\n    int a = 10, b = 4;\n \n    // greater than example\n    if (a > b)\n        printf(\"a is greater than b\\n\");\n    else\n        printf(\"a is less than or equal to b\\n\");\n \n    // greater than equal to\n    if (a >= b)\n        printf(\"a is greater than or equal to b\\n\");\n    else\n        printf(\"a is lesser than b\\n\");\n \n    // less than example\n    if (a < b)\n        printf(\"a is less than b\\n\");\n    else\n        printf(\"a is greater than or equal to b\\n\");\n \n    // lesser than equal to\n    if (a <= b)\n        printf(\"a is lesser than or equal to b\\n\");\n    else\n        printf(\"a is greater than b\\n\");\n \n    // equal to\n    if (a == b)\n        printf(\"a is equal to b\\n\");\n    else\n        printf(\"a and b are not equal\\n\");\n \n    // not equal to\n    if (a != b)\n        printf(\"a is not equal to b\\n\");\n    else\n        printf(\"a is equal b\\n\");\n \n    return 0;\n}",
+      "output": "a is greater than b\na is greater than or equal to b\na is greater than or equal to b\na is greater than b\na and b are not equal\na is not equal to b\n"
+    },
+    {
+      "indNum": "3",
+      "queName": "Logical AND (&&) Operator",
+      "code": "#include <stdio.h>\n \n// Driver code\nint main()\n{\n    int a = 10, b = 20;\n \n    if (a > 0 && b > 0) {\n        printf(\"Both values are greater than 0\\n\");\n    }\n    else {\n        printf(\"Both values are less than 0\\n\");\n    }\n    return 0;\n}",
+      "output": "Both values are greater than 0"
+    },
+    {
+      "indNum": "4",
+      "queName": "Logical OR (||) Operator",
+      "code": "#include <stdio.h>\n \nint main()\n{\n    int a = -1, b = 20;\n \n    if (a > 0 || b > 0) {\n        printf(\"Any one of the given value is \"\n               \"greater than 0\\n\");\n    }\n    else {\n        printf(\"Both values are less than 0\\n\");\n    }\n    return 0;\n}",
+      "output": "Any one of the given value is greater than 0"
+    },
+    {
+      "indNum": "5",
+      "queName": "Logical NOT (!) Operator",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int a = 10, b = 20;\n\n    if (!(a > 0 && b > 0))\n    {\n        printf(\"Both values are greater than 0\\n\");\n    }\n    else\n    {\n        printf(\"Both values are less than 0\\n\");\n    }\n    return 0;\n}",
+      "output": "Both values are less than 0"
+    },
+    {
+      "indNum": "6",
+      "queName": "Assignment Operator (=) example",
+      "code": "#include <stdio.h>\n\nint main()\n{\n\n    int n1, n2, c, x, y;\n    n1 = 5;\n    n2 = n1;\n    c = n1 + n2;\n    x = 20 / 4 * 2 + 5;\n    printf(\" \\n The value of n1: %d\", n1);\n    printf(\" \\n The value of n2: %d\", n2);\n    printf(\" \\n The value of c: %d\", c);\n    printf(\" \\n The value of x: %d\", x);\n    return 0;\n}",
+      "output": " The value of n1: 5\n The value of n2: 5\n The value of c: 10\n The value of x: 15"
+    },
+    {
+      "indNum": "7",
+      "queName": "Assignment Operator (=, +=, -=, *=, |=. %=)",
+      "code": "#include <stdio.h>\n\nmain()\n{\n\n    int a = 21;\n    int c;\n\n    c = a;\n    printf(\"Line 1 - =  Operator Example, Value of c = %d\\n\", c);\n\n    c += a;\n    printf(\"Line 2 - += Operator Example, Value of c = %d\\n\", c);\n\n    c -= a;\n    printf(\"Line 3 - -= Operator Example, Value of c = %d\\n\", c);\n\n    c *= a;\n    printf(\"Line 4 - *= Operator Example, Value of c = %d\\n\", c);\n\n    c /= a;\n    printf(\"Line 5 - /= Operator Example, Value of c = %d\\n\", c);\n\n    c = 200;\n    c %= a;\n    printf(\"Line 6 - %= Operator Example, Value of c = %d\\n\", c);\n\n    c <<= 2;\n    printf(\"Line 7 - <<= Operator Example, Value of c = %d\\n\", c);\n\n    c >>= 2;\n    printf(\"Line 8 - >>= Operator Example, Value of c = %d\\n\", c);\n\n    c &= 2;\n    printf(\"Line 9 - &= Operator Example, Value of c = %d\\n\", c);\n\n    c ^= 2;\n    printf(\"Line 10 - ^= Operator Example, Value of c = %d\\n\", c);\n\n    c |= 2;\n    printf(\"Line 11 - |= Operator Example, Value of c = %d\\n\", c);\n}",
+      "output": "Line 1 - =  Operator Example, Value of c = 21\nLine 2 - += Operator Example, Value of c = 42\nLine 3 - -= Operator Example, Value of c = 21\nLine 4 - *= Operator Example, Value of c = 441\nLine 5 - /= Operator Example, Value of c = 21\nLine 6 - = Operator Example, Value of c = 11\nLine 7 - <<= Operator Example, Value of c = 44\nLine 8 - >>= Operator Example, Value of c = 11\nLine 9 - &= Operator Example, Value of c = 2\nLine 10 - ^= Operator Example, Value of c = 0\nLine 11 - |= Operator Example, Value of c = 2\n"
+    },
+    {
+      "indNum": "8",
+      "queName": "Unary Operator (++, --)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int a = 10, b = 4, res;\n\n    printf(\"Post Increment and Decrement\\n\");\n    // post-increment example:\n    // res is assigned 10 only, a is not updated yet\n    res = a++;\n    printf(\"a is %d and result is %d\\n\", a,\n           res); // a becomes 11 now\n\n    // post-decrement example:\n    // res is assigned 11 only, a is not updated yet\n    res = a--;\n    printf(\"a is %d and result is %d\\n\", a,\n           res); // a becomes 10 now\n\n    printf(\"\\nPre Increment and Decrement\\n\");\n    // pre-increment example:\n    // res is assigned 11 now since\n    // a is updated here itself\n    res = ++a;\n\n    // a and res have same values = 11\n    printf(\"a is %d and result is %d\\n\", a, res);\n\n    // pre-decrement example:\n    // res is assigned 10 only since a is updated here\n    // itself\n    res = --a;\n\n    // a and res have same values = 10\n    printf(\"a is %d and result is %d\\n\", a, res);\n\n    return 0;\n}",
+      "output": "Post Increment and Decrement\na is 11 and result is 10\na is 10 and result is 11\n\nPre Increment and Decrement\na is 11 and result is 11\na is 10 and result is 10"
+    },
+    {
+      "indNum": "9",
+      "queName": "Ternary Operator (?:)",
+      "code": "#include <stdio.h>\n\nint main()\n{\n    int age;\n\n    printf(\"Enter your age: \");\n    scanf(\"%d\", &age);\n\n    // ternary operator to find if a person can vote or not\n    (age >= 18) ? printf(\"You can vote\") : printf(\"You cannot vote\");\n\n    return 0;\n}",
+      "output": "Enter your age: 56\nYou can vote"
+    }
+  ],
+  "Structure and Union": [
+    {
+      "indNum": "1",
+      "queName": "Simple Structure",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "2",
+      "queName": "Nested Structure 1",
+      "code": "#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()\n#include<stdio.h>\nint main()",
+      "output": "Hello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!"
+    },
+    {
+      "indNum": "3",
+      "queName": "Nested Structure 2",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "4",
+      "queName": "Union Example 1",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "5",
+      "queName": "Union Example 2",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    }
+  ],
+  "Pointer": [
+    {
+      "indNum": "1",
+      "queName": "Pointer (int, float, char)",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "2",
+      "queName": "Pointer (reuse to point diff. variable)",
+      "code": "#include<stdio.h>\nint main()",
+      "output": "Hello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!\nHello World!"
+    },
+    {
+      "indNum": "3",
+      "queName": "Show Address of variable",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "4",
+      "queName": "Show Actual value and Address of variable",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "5",
+      "queName": "Pointer to array",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "6",
+      "queName": "Pointer to string",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "7",
+      "queName": "Pointer to structure",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "8",
+      "queName": "Pointer to function",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "9",
+      "queName": "Swapping using Pointer",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "10",
+      "queName": "NULL Pointer",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    }
+  ],
+  "File Handling": [
+    {
+      "indNum": "1",
+      "queName": "Write/Reed (using putc & getc)",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "2",
+      "queName": "Write/Reed (using fprintf & fscanf)",
+      "code": "#include<stdio.h>\nint main()\n{}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "3",
+      "queName": "Write/Reed (using fwrite & fread)",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "4",
+      "queName": "Create a Temporary File",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "5",
+      "queName": "Rename a file",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "6",
+      "queName": "Make a file (Only Read)",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "7",
+      "queName": "Copy one File into Another File",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "38",
+      "queName": "Random access to a File",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "39",
+      "queName": "Print File content in reverse order",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    },
+    {
+      "indNum": "40",
+      "queName": "Copy File Content",
+      "code": "#include<stdio.h>\nint main(){\n\tprintf(\"Hello World!\");\n}",
+      "output": "Hello World!"
+    }
+  ],
+  "Math Functions": [
+    {
+      "indNum": "1",
+      "queName": "Sin",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    double result, x;\n    printf(\"enter the value: \");\n    scanf(\"%lf\", &x);\n\n    result = sin(x);\n\n    printf(\"The sin of %lf is %lf\", x, result);\n\n    return 0;\n}",
+      "output": "Run 1:\nenter the value: 0.5\nThe sin of 0.500000 is 0.479426\n\nRun 2:\nenter the value: 90\nThe sin of 90.000000 is 0.893997"
+    },
+    {
+      "indNum": "2",
+      "queName": "Cos",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    double result, x;\n    printf(\"enter the value: \");\n    scanf(\"%lf\", &x);\n\n    result = cos(x);\n\n    printf(\"The cosine of %lf is %lf\", x, result);\n\n    return 0;\n}",
+      "output": "Run 1:\nenter the value: 0.5\nThe cosine of 0.500000 is 0.877583\n\nRun 2:\nenter the value: 0\nThe cosine of 0.000000 is 1.000000"
+    },
+    {
+      "indNum": "3",
+      "queName": "Tan",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    double result, x;\n    printf(\"enter the value: \");\n    scanf(\"%lf\", &x);\n\n    result = tan(x);\n\n    printf(\"The tan of %lf is %lf\", x, result);\n\n    return 0;\n}",
+      "output": "Run 1:\nenter the value: 180\nThe tan of 180.000000 is 1.338690\n\nRun 2:\nenter the value: 1\nThe tan of 1.000000 is 1.557408"
+    },
+    {
+      "indNum": "4",
+      "queName": "Abs",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    int result, x;\n    printf(\"enter the value: \");\n    scanf(\"%d\", &x);\n\n    result = abs(x);\n\n    printf(\"number: %d absolute %d\", x, result);\n\n    return 0;\n}",
+      "output": "Run 1:\nenter the value: -1389482\nnumber: -1389482 absolute value: 1389482"
+    },
+    {
+      "indNum": "5",
+      "queName": "Floor",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    double result, x;\n    printf(\"enter the value: \");\n    scanf(\"%lf\", &x);\n\n    result = floor(x);\n\n    printf(\"Original Number: %5.3lf\", x);\n    printf(\"Number rounded down: %5.3lf\", x);\n\n    return 0;\n}",
+      "output": "enter the value: 56.64\nOriginal Number: 56.640\nNumber rounded down: 56.000"
+    },
+    {
+      "indNum": "6",
+      "queName": "Ceil",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    double result, x;\n    printf(\"enter the value: \");\n    scanf(\"%lf\", &x);\n\n    result = ceil(x);\n\n    printf(\"Original Number: %5.3lf\", x);\n    printf(\"Number rounded up: %5.3lf\", x);\n\n    return 0;\n}",
+      "output": "enter the value: 133.64\nOriginal Number: 133.640\nNumber rounded up: 134.000"
+    },
+    {
+      "indNum": "7",
+      "queName": "Sqrt",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    double result, x;\n    printf(\"enter the value: \");\n    scanf(\"%lf\", &x);\n\n    result = sqrt(x);\n\n    printf(\"The square root of %lf is %lf\", x, result);\n\n    return 0;\n}",
+      "output": "enter the value: 9\nThe square root of 9.000000 is 3.000000"
+    },
+    {
+      "indNum": "8",
+      "queName": "Log",
+      "code": "#include <stdio.h>\n#include <math.>\n\nint main()\n{\n    double result, x;\n    printf(\"enter the value: \");\n    scanf(\"%lf\", &x);\n\n    result = log(x);\n\n    printf(\"The natural logarithm of %lf is %lf\", x, result);\n\n    return 0;\n}",
+      "output": "Run 1:\nenter the value: 10\nThe natural logarithm of 10.000000 is 2.302585\n\nRun 2:\nenter the value: 1\nThe natural logarithm of 1.000000 is 0.000000"
+    }
+  ]
+}
